@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
       <title>Buje</title>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <!-- Bootstrap -->
@@ -18,7 +18,7 @@
       <![endif]-->
    </head>
    <body>
-      <nav class="navbar navbar-default header navbar-fixed-top">
+      <nav class="navbar navbar-default header">
          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -56,20 +56,91 @@
                   <input type="submit" name="" value="SUBMIT">
                </form>
                <ul>
-                  <li><a href="#" class="fbIcon"><i class="fb"></i></a></li>
+                  <li><a href="#"><i class="fb"></i></a></li>
                   <li><a href="#" class="active"><i class="twitter"></i></a></li>
-                  <li><a href="#" class="linkedinIcon"><i class="linkedIn"></i></a></li>
+                  <li><a href="#"><i class="linkedIn"></i></a></li>
                   <li class="clear"></li>
                </ul>
             </div>
             <!--content ends-->
+            <div class="clear"></div>
          </div>
          <!--container ends-->
       </div>
       <!--weDeliver ends-->
+      <div class="services">
+         <div class="container">
+            <h3>Service</h3>
+            <div class="structure">
+               <span class="horizontalLine"></span>
+               <span class="verticalLine"></span>
+               <span class="lineLeft"></span>
+               <span class="lineRight"></span>
+            </div>
+            <!--structure ends-->
+            <div class="row serviceInfo">
+               <div class="col-md-4">
+                  <img src="images/customize.png">
+                  <h4>Fully Customizable</h4>
+                  <p>Ut enim ad minim cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
+               <div class="col-md-4">
+                  <img src="images/quality.png">
+                  <h4>Quality Design</h4>
+                  <p>Ut enim ad minim cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
+               <div class="col-md-4">
+                  <img src="images/support.png">
+                  <h4>Great Support</h4>
+                  <p>Ut enim ad minim cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
+            </div>
+            <!--row ends-->
+         </div>
+         <!--container ends-->
+      </div>
+      <!--services ends-->
+      <div class="slider">
+         <div class="container">
+            <div class="slideOne">
+               <div class="designerPic">
+                  <img src="images/michael.png">
+               </div>
+               <!--designerPic-->
+               <div class="designerInfo">
+                  <h3>MICHAEL SMITH</h3>
+                  <span>Designer</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur anim id est laborum</p>
+                  <div class="content socialIcons">
+                     <ul>
+                        <li><a href="#"><i class="fb"></i></a></li>
+                        <li><a href="#" class="active"><i class="twitter"></i></a></li>
+                        <li><a href="#"><i class="linkedIn"></i></a></li>
+                        <li class="clear"></li>
+                     </ul>
+                  </div>
+                  <!--content-->
+               </div>
+               <!--designerInfo-->
+               <div class="clear"></div>
+            </div>
+            <!--slideOne-->
+         </div>
+         <!--container-->
+      </div>
+      <!--slider-->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $(window).bind('scroll', function () {
+          if ($(window).scrollTop() >630) {
+            $('.navbar').addClass('fixed');
+            } else {
+            $('.navbar').removeClass('fixed');
+            }
+         });
+      </script>
    </body>
 </html>

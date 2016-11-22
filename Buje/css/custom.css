@@ -7,9 +7,6 @@ url('../fonts/GentiumBookBasic.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
-body{
-padding-top: 92px;
-}
 .clear{
 clear:both;
 }
@@ -57,6 +54,7 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-top: 109px;
 padding-bottom: 122px;
+margin-bottom: 91px;
 }
 .content{
 max-width: 458px;
@@ -67,8 +65,7 @@ background: -webkit-linear-gradient(#ff6868, #a8585d);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: 800;
-font-size: 52px;
-line-height: 54px;
+font: 52px/54px 'Open Sans', sans-serif;
 margin-top: 0;
 margin-bottom: 16.5px;
 }
@@ -113,11 +110,11 @@ background-color: #f40a0a;
 .content ul{
 padding: 0;
 margin-bottom: 0;
+list-style-type: none;
 }
 .content ul li{
 float: left;
 margin-right: 22px;
-list-style-type: none;
 }
 .content ul li.clear{
 float: none;
@@ -143,16 +140,11 @@ vertical-align: middle;
 width: 8px;
 height: 18px;
 }
-.fbIcon:hover{
+.content ul li a:hover{
 background-color: #ff6868;
 }
-.fbIcon:hover .fb{
-background: url('../images/sprite.png')no-repeat;
+.content ul li a:hover .fb{
 background-position:-40px 0;
-display: inline-block;
-vertical-align: middle;
-width: 8px;
-height: 18px;
 }
 .twitter{
 background: url('../images/sprite.png')no-repeat;
@@ -170,14 +162,192 @@ vertical-align: middle;
 width: 18px;
 height: 17px;
 }
-.linkedinIcon:hover {
-background-color: #ff6868;
-}
-.linkedinIcon:hover .linkedIn{
-background: url('../images/sprite.png')no-repeat;
+.content ul li a:hover .linkedIn{
 background-position:-78px 0;
+}
+.navbar{
+position:relative;
+}
+.navbar.fixed{
+position:fixed;
+top:0;
+width: 100%;
+z-index: 50;
+}
+.services{
+text-align: center;
+margin-bottom:88.5px;
+}
+.services h3{
+font: 38px/40px 'Open Sans', sans-serif;
+color:#3a424c;
+font-weight: 300;
+margin-top: 0;
+margin-bottom:73px;
+}
+.structure{
+position: relative;
+margin-bottom:76px;
+}
+.horizontalLine{
+border-top: 2px dashed #f1f3f5;
+display:block;
+width:642px;
+margin:0 auto;
+}
+.verticalLine{
+border-left:2px dashed #f1f3f5;
+display:block;
+height:80px;
+position: absolute;
+top:-48px;
+left:473px;
+}
+.verticalLine::before{
+content: "";
+position: absolute;
+width: 28px;
+height: 65px;
+border-radius: 50%;
+background: transparent;
+border-bottom: solid 3px #ff6868;
+border-right: solid 3px transparent;
+border-left: solid 3px transparent;
+left: -15px;
+top:-65px;
+}
+.verticalLine::after{
+content: "";
+position: absolute;
+width: 28px;
+height: 65px;
+border-radius: 50%;
+background: transparent;
+border-top: solid 3px #ff6868;
+border-right: solid 3px transparent;
+border-left: solid 3px transparent;
+left: -15px;
+top:80px;
+}
+.lineLeft{
+border-left:2px dashed #f1f3f5;
+display:block;
+top:0;
+position: absolute;
+height: 30px;
+left: 147px;
+}
+.lineLeft::after{
+content: "";
+position: absolute;
+width: 28px;
+height: 65px;
+border-radius: 50%;
+background: transparent;
+border-top: solid 3px #ff6868;
+border-right: solid 3px transparent;
+border-left: solid 3px transparent;
+left: -15px;
+top:30px;
+}
+.lineRight{
+border-right:2px dashed #f1f3f5;
+display:block;
+top:0;
+position: absolute;
+height: 30px;
+right: 147px;
+}
+.lineRight::after{
+content: "";
+position: absolute;
+width: 28px;
+height: 65px;
+border-radius: 50%;
+background: transparent;
+border-top: solid 3px #ff6868;
+border-right: solid 3px transparent;
+border-left: solid 3px transparent;
+left: -13px;
+top:30px;
+}
+.serviceInfo img{
+margin-bottom: 23px;
+}
+.serviceInfo h4{
+margin-top: 0;
+font: 24px/26px 'Open Sans', sans-serif;
+color: #3a424c;
+margin-bottom: 18.5px;
+}
+.serviceInfo p{
+font:14px/21px 'Gentium Book Basic';
+color:#99a0a8;
+margin-bottom: 0;
+}
+.slider{
+background: url('../images/sliderImg.png')no-repeat;
+background-size: cover;
+padding-top: 62px;
+padding-bottom: 62px;
+}
+.slideOne{
+margin-left: 78px;
+}
+.designerPic{
+float: left;
+}
+.designerInfo{
+float: left;
+width: 461px;
+margin-left: 21px;
+}
+.designerInfo h3{
+font:32px/34px 'Open Sans', sans-serif;
+font-weight: 800;
+background: -webkit-linear-gradient(#ff6868, #a3575c);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 0;
+margin-bottom: 7px;
+}
+.designerInfo span{
+font:24px/26px 'Open Sans', sans-serif;
+font-weight:300;
+color: #ffffff;
 display: inline-block;
-vertical-align: middle;
-width: 18px;
-height: 17px;
+margin-bottom:19.5px;
+} 
+.designerInfo p{
+font:14px/21px 'Gentium Book Basic';
+color: #ffffff;
+margin-bottom: 20.5px;
+}
+.socialIcons ul li{
+margin-right: 16px;
+}
+.socialIcons ul li a{
+height: 36px;
+width: 36px;
+}
+.socialIcons ul li a:hover .fb{
+background-position:-112px -1px;
+}
+.socialIcons .fb{
+background-position:-102px -1px;
+height:14px;
+width: 7px;
+}
+.socialIcons .twitter{
+background-position:-124px -1px;
+height:13px;
+width:14px;
+}
+.socialIcons .linkedIn{
+background-position:-140px -1px;
+height:14px;
+width:15px;
+}
+.socialIcons ul li a:hover .linkedIn{
+background-position:-159px -1px;
 }
