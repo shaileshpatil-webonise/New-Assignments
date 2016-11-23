@@ -18,7 +18,7 @@
       <![endif]-->
    </head>
    <body>
-      <nav class="navbar navbar-default header">
+      <nav class="navbar navbar-default header navbar-fixed-top">
          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -111,15 +111,23 @@
                   <h3>MICHAEL SMITH</h3>
                   <span>Designer</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur anim id est laborum</p>
-                  <div class="content socialIcons">
                      <ul>
-                        <li><a href="#"><i class="fb"></i></a></li>
-                        <li><a href="#" class="active"><i class="twitter"></i></a></li>
-                        <li><a href="#"><i class="linkedIn"></i></a></li>
-                        <li class="clear"></li>
+                       <li><a href="#"><i class="fbIcon">
+                       </i></a></li>
+                       <li><a href="#" class="active"><i class="twitterIcon">
+                       </i></a></li>
+                       <li><a href="#"><i class="linkedinIcon"></i></a></li>
+                       <li class="clear"></li>
                      </ul>
-                  </div>
-                  <!--content-->
+                     <div class="skillsInfo">
+                        <span class="skillsText">SKILLS</span>
+                        <span class="number">84%</span>
+                        <div class="clear"></div>
+                     </div><!--skillsInfo-->
+                    <div class="progress">
+    <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" >
+    </div>
+</div>
                </div>
                <!--designerInfo-->
                <div class="clear"></div>
@@ -129,18 +137,26 @@
          <!--container-->
       </div>
       <!--slider-->
+<div class="appDevelopment">
+<h3>APP DEVELOPMENT</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur anim id est laborum</p>
+<a href="#">LEARN MORE</a>
+</div><!--appDevelopment ends-->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
-      <script type="text/javascript">
-         $(window).bind('scroll', function () {
-          if ($(window).scrollTop() >630) {
-            $('.navbar').addClass('fixed');
-            } else {
-            $('.navbar').removeClass('fixed');
+     <script type="text/javascript">
+     $(document).ready(function(){
+         $(window).scroll(function(){
+            if($(document).scrollTop() >200){
+               $('nav').addClass('scrollHeader');
+            }
+            else{
+               $('nav').removeClass('scrollHeader');
             }
          });
-      </script>
+     }); 
+     </script>
    </body>
 </html>

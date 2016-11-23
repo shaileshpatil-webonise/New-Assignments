@@ -10,18 +10,35 @@ font-style: normal;
 .clear{
 clear:both;
 }
+body{
+	padding-top: 93px;
+}
 .header{
 border: 0;
 border-radius:0;
 border-top:2px solid #ff6868;
 margin-bottom: 0;
-background: -webkit-linear-gradient(#333b45,#38404a);
+/*background-color: -webkit-linear-gradient(#333b45,#38404a);*/
+background:rgba(58,66,76,1);
 min-height: auto;
 padding-top: 33px;
 padding-bottom: 33px;
+-moz-transition:all linear 1s;
+-webkit-transition:all linear 1s;
+-ms-transition:all linear 1s;
+-o-transition:all linear 1s;
+transition:all linear 1s;
+}
+nav.scrollHeader{
+	background:rgba(59,67,77,1);
+	-moz-transition:all linear 1s;
+-webkit-transition:all linear 1s;
+-ms-transition:all linear 1s;
+-o-transition:all linear 1s;
+transition:all linear 1s;
 }
 .header .logo{
-font: 22px/24px 'Open Sans', sans-serif;
+font: 22px/27px 'Open Sans', sans-serif;
 background: -webkit-linear-gradient(#ff6868, #da6163);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -98,7 +115,7 @@ width: 102px;
 height: 46px;
 background-color: #ff6868;
 color:#ffffff;
-margin-left: 16px;
+margin-left: 15px;
 border-radius: 6px;
 font: 12px/14px 'Open Sans', sans-serif;
 font-weight: 700;
@@ -164,15 +181,6 @@ height: 17px;
 }
 .content ul li a:hover .linkedIn{
 background-position:-78px 0;
-}
-.navbar{
-position:relative;
-}
-.navbar.fixed{
-position:fixed;
-top:0;
-width: 100%;
-z-index: 50;
 }
 .services{
 text-align: center;
@@ -309,45 +317,122 @@ background: -webkit-linear-gradient(#ff6868, #a3575c);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 margin-top: 0;
-margin-bottom: 7px;
+margin-bottom: 5px;
 }
-.designerInfo span{
+.designerInfo > span{
 font:24px/26px 'Open Sans', sans-serif;
 font-weight:300;
 color: #ffffff;
 display: inline-block;
-margin-bottom:19.5px;
+margin-bottom:18.5px;
 } 
 .designerInfo p{
 font:14px/21px 'Gentium Book Basic';
 color: #ffffff;
-margin-bottom: 20.5px;
+margin-bottom: 19.5px;
 }
-.socialIcons ul li{
-margin-right: 16px;
+.designerInfo ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom:22px;
 }
-.socialIcons ul li a{
+.designerInfo ul li{
+	float: left;
+	margin-right:16px;
+}
+.designerInfo ul li.clear{
+	float: none;
+	margin-right: 0;
+}
+.designerInfo ul li a{
 height: 36px;
 width: 36px;
+border: 2px solid #ff6868;
+border-radius: 50%;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+box-sizing: border-box;
 }
-.socialIcons ul li a:hover .fb{
-background-position:-112px -1px;
+.designerInfo ul li a.active{
+	background-color: #ff6868;
 }
-.socialIcons .fb{
-background-position:-102px -1px;
-height:14px;
-width: 7px;
+.designerInfo ul li a:hover{
+	background-color: #ff6868;
 }
-.socialIcons .twitter{
-background-position:-124px -1px;
-height:13px;
-width:14px;
+.fbIcon{
+	background-image: url('../images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -102px -1px;
+	width: 7px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
 }
-.socialIcons .linkedIn{
-background-position:-140px -1px;
-height:14px;
-width:15px;
+.designerInfo ul li a:hover .fbIcon{
+	background-position: -112px -1px;
 }
-.socialIcons ul li a:hover .linkedIn{
-background-position:-159px -1px;
+.twitterIcon{
+	background-image: url('../images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -123px -1px;
+	width: 14px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.linkedinIcon{
+	background-image: url('../images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -140px -1px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.designerInfo ul li a:hover .linkedinIcon{
+	background-position: -159px -1px;
+}
+.skillsInfo{
+	margin-bottom: 13px;
+}
+.skillsInfo span{
+	font:14px/16px 'Open Sans', sans-serif;
+}
+.skillsText{
+	color: #ffffff;
+	float: left;
+}
+.skillsInfo span.clear{
+	float: none;
+}
+.number{
+	color: #ff6868;
+	float: right;
+}
+.progress {
+	background-color:#4a515b;
+  	height:4px;
+  	margin-bottom: 0;
+  	border-radius: 0;
+}
+.progress-bar-custom {
+	/*background:#f26667;*/
+	width: 84%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,4a515b+49,ff6868+100 */
+background: #4a515b; /* Old browsers */
+background: -moz-linear-gradient(left,  #4a515b 0%, #4a515b 49%, #ff6868 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #4a515b 0%,#4a515b 49%,#ff6868 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #4a515b 0%,#4a515b 49%,#ff6868 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', endColorstr='#ff6868',GradientType=1 ); /* IE6-9 */
+}
+.appDevelopment{
+	background: url('../images/iphone.png')no-repeat;
+}
+.appDevelopment h3{
+font: 32px/34px 'Open Sans', sans-serif;
+background: -webkit-linear-gradient(#ff6868, #ffafaf);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 800;
 }
