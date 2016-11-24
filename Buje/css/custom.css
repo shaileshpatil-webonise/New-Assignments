@@ -298,6 +298,7 @@ background: url('../images/sliderImg.png')no-repeat;
 background-size: cover;
 padding-top: 62px;
 padding-bottom: 62px;
+margin-bottom: 87px;
 }
 .slideOne{
 margin-left: 78px;
@@ -417,9 +418,7 @@ box-sizing: border-box;
   	border-radius: 0;
 }
 .progress-bar-custom {
-	/*background:#f26667;*/
 	width: 84%;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,4a515b+49,ff6868+100 */
 background: #4a515b; /* Old browsers */
 background: -moz-linear-gradient(left,  #4a515b 0%, #4a515b 49%, #ff6868 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  #4a515b 0%,#4a515b 49%,#ff6868 100%); /* Chrome10-25,Safari5.1-6 */
@@ -427,12 +426,152 @@ background: linear-gradient(to right,  #4a515b 0%,#4a515b 49%,#ff6868 100%); /* 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', endColorstr='#ff6868',GradientType=1 ); /* IE6-9 */
 }
 .appDevelopment{
-	background: url('../images/iphone.png')no-repeat;
+	border-bottom: 3px solid #d6d9d9;
+	position: relative;
+	margin-bottom: 90px;
 }
-.appDevelopment h3{
+.appContent{
+	margin-left: 258px;
+	margin-bottom: 92px;
+	width: 463px;
+}
+.appContent h3{
 font: 32px/34px 'Open Sans', sans-serif;
-background: -webkit-linear-gradient(#ff6868, #ffafaf);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,ff6868+0,ff7b7b+50,ffa7a7+98,ff6868+100 */
+background: #4a515b; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a515b 0%, #ff6868 0%, #ff7b7b 50%, #ffa7a7 98%, #ff6868 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4a515b 0%,#ff6868 0%,#ff7b7b 50%,#ffa7a7 98%,#ff6868 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4a515b 0%,#ff6868 0%,#ff7b7b 50%,#ffa7a7 98%,#ff6868 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', endColorstr='#ff6868',GradientType=0 ); /* IE6-9 */
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: 800;
+margin-top: 0px;
+margin-bottom: 19.5px;
+}
+.appContent p{
+	font:14px/21px 'Gentium Book Basic';
+	color: #99a0a8;
+	margin-bottom: 17.5px;
+}
+.appContent a{
+	font: 12px/14px 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	background-color:#ff6868;
+	border-radius: 6px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 16px 27px;
+}
+.appContent a:hover
+{
+    background-color: #f40a0a;
+}
+.appDevelopment img{
+	position: absolute;
+	top: 2px;
+	right: 50px;
+	z-index:5;
+}
+
+
+.portfolio h3{
+	font: 38px/40px 'Open Sans', sans-serif;
+	color: #3a424c;
+	font-weight: 300;
+	margin-bottom: 64px;
+	margin-top: 0px;
+	text-align: center;
+}
+.portfolioMenu{
+	text-align: center;
+	margin-bottom: 65px;
+}
+.portfolioMenu ul{
+	display: inline-block;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.portfolioMenu ul li{
+float: left;
+}
+.portfolioMenu ul li a{
+	border-radius: 5px;
+	display:block;
+	font: 16px/18px 'Open Sans', sans-serif;
+	text-decoration: none;
+	padding: 9px 17px;
+	color:#99a0a8;
+	font-weight: 400;
+	border:1px solid #fff;
+}
+.portfolioMenu ul li a.active{
+	background-color:#ff6868;
+	color: #fff; 
+}
+.portfolioMenu ul li a.active:hover{
+	background-color:#ff6868;
+	color: #fff; 	
+}
+.portfolioMenu ul li a:hover{
+	color:#ff6868;
+	border: 1px solid #ff6868; 
+}
+.portfolioMenu ul li a.mobActive{
+		color:#ff6868;
+		border: 1px solid #ff6868; 
+}
+.portfolioImages ul
+{
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.projectTitle span{
+	font:24px/26px 'Open Sans', sans-serif;
+	color:#ff6868;
+	font-weight: 800;
+	display: inline-block;
+	vertical-align: middle;
+}
+.plus{
+	background-image:url('../images/plus.png');
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 36px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 14px;
+}
+.projectTitle
+{
+	display: none;
+	position:absolute;
+	text-align: center;
+	height:322px;
+	width: 325px; 
+	top:0;
+}
+.portfolioImages ul li img{
+	display: block;
+}
+.portfolioImages ul li{
+	position:relative;
+	float: left;
+}
+.portfolioImages ul li.clear{
+	float: none;
+}
+.projectTitle a{
+	display: inline-block;
+	margin-top: 152px;
+}
+.portfolioImages ul li:hover .projectTitle{
+	display: block;
+	background:rgba(0,0,0,0.4);
+}
+.portfolioImages ul li.active .projectTitle{
+	display: block;
+	background:rgba(0,0,0,0.4);
 }
