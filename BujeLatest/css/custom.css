@@ -695,11 +695,11 @@ background-position:-178px 0;
 margin-top: -3px;
 }
 .newsLetter{
-	background:url('../images/newsletter.png')no-repeat;
-	padding-top: 62px;
-	padding-bottom: 62px;
-	background-size: cover;
-	margin-bottom: 92px;
+background:url('../images/newsletter.png')no-repeat;
+padding-top: 62px;
+padding-bottom: 62px;
+background-size: cover;
+margin-bottom: 92px;
 }
 .subscribeContent{
 width: 526px;
@@ -722,26 +722,26 @@ width: 443px;
 margin-bottom: 19.5px;
 }
 .pricing{
-	margin-bottom: 92px;
+margin-bottom: 92px;
 }
 .pricing h2{
 margin-bottom: 55px;
 }
 .pricing > .container > ul > li{
-	width: 300px;
-	margin-right: 20px;
-	border:2px solid #f5f7f9;
-	border-radius: 7px;
-	box-sizing: border-box;
-	float: left;
+width: 300px;
+margin-right: 20px;
+border:2px solid #f5f7f9;
+border-radius: 7px;
+box-sizing: border-box;
+float: left;
 }
 .pricing > .container > ul > li:nth-child(3){
-	margin-right: 0;
+margin-right: 0;
 }
 .pricing > .container > ul > li.clear{
-	width: 0;
-	margin-right:0;
-	float: none;
+width: 0;
+margin-right:0;
+float: none;
 }
 .subHeading{
 background-color: #39414b;
@@ -749,7 +749,7 @@ padding: 39px 25px;
 border-radius: 7px 7px 0 0;
 }
 .leftContent{
-	float: left;
+float: left;
 }
 .leftContent h3{
 font:28px/30px 'Open Sans', sans-serif;
@@ -764,20 +764,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', end
 -webkit-text-fill-color: transparent;
 }
 .leftContent span{
-	font:12px/14px 'Open Sans', sans-serif;
-	color:#717a84;
-	display: inline-block;
-	font-weight: 600;
+font:12px/14px 'Open Sans', sans-serif;
+color:#717a84;
+display: inline-block;
+font-weight: 600;
 }
 .rightContent{
-	float: right;
+float: right;
 }
 .rightContent span{
-	font:32px/34px 'Open Sans', sans-serif;
-	display: inline-block;
-	color:#ff6868;
-	font-weight: 700;
-	margin-top: 5px;
+font:32px/34px 'Open Sans', sans-serif;
+display: inline-block;
+color:#ff6868;
+font-weight: 700;
+margin-top: 5px;
 }
 .rightArrow{
 background-image: url('../images/sprite.png');
@@ -786,15 +786,15 @@ height: 19px;
 width: 19px;
 display: inline-block;
 vertical-align: middle;
-background-position:-198px 0;
+background-position:-199px -1px;
 }
 .pricingList{
-	text-align: center;
-	padding-bottom:27px;
+text-align: center;
+padding-bottom:27px;
 }
 .pricingList ul{
-	padding: 25px 89px 25px 21px; 
-	text-align: left;
+padding: 25px 89px 25px 21px; 
+text-align: left;
 }
 .pricingList ul li{
 margin-bottom: 16px;
@@ -803,24 +803,24 @@ margin-bottom: 16px;
 margin-bottom: 0;
 }
 .pricingList ul li span{
-	font:16px/18px 'Open Sans', sans-serif;
-	display: inline-block;
-	vertical-align: middle;
-	color: #99a0a8;
-	margin-left: 14px;
+font:16px/18px 'Open Sans', sans-serif;
+display: inline-block;
+vertical-align: middle;
+color: #99a0a8;
+margin-left: 14px;
 }
 .caseStudies{
-	text-align: center;
-	background-color: #38404a;
-	padding-top: 60px;
-	padding-bottom: 60px;
+text-align: center;
+background-color: #38404a;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .caseStudies p{
-	font:32px/48px 'Open Sans', sans-serif;
-	color: #ffffff;
-	width: 830px;
-	margin: 0 auto;
-	margin-bottom: 12px;
+font:32px/48px 'Open Sans', sans-serif;
+color: #ffffff;
+width: 830px;
+margin: 0 auto;
+margin-bottom: 12px;
 }
 .caseStudies span{
 display: inline-block;
@@ -834,16 +834,16 @@ color: #ffffff;
 color: #99a0a8;
 }
 .caseStudies a{
-	display:inline-block;
-	text-align: center;
-	background-color: #ff6868;
-	border-radius: 50%;
+display:inline-block;
+text-align: center;
+background-color: #ff6868;
+border-radius: 50%;
 }
 .caseStudies .designerTwitter{
-	height: 36px;
-	width: 36px;
-	background-position: -225px 12px;
+height: 36px;
+width: 36px;
+background-position: -225px 12px;
 }
 .caseText{
-	margin-bottom: 16px;
+margin-bottom: 16px;
 }
