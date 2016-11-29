@@ -23,7 +23,7 @@ margin-bottom:107px;
 background:url('../images/headerbanner.png')no-repeat;
 background-size: cover;
 padding-bottom: 107px;
-margin-bottom: 80px;
+margin-bottom: 90px;
 }
 .header{
 border-top:2px solid #ff6868;
@@ -31,7 +31,7 @@ padding: 32px 0;
 position: fixed;
 top: 0;
 width: 100%;
-background:rgba(58,66,76,1);
+background:rgba(52,60,70,0);
 -moz-transition:all linear 1s;
 -webkit-transition:all linear 1s;
 -ms-transition:all linear 1s;
@@ -39,8 +39,7 @@ background:rgba(58,66,76,1);
 transition:all linear 1s;
 }
 .scrollHeader{
-background: #000;
-/*background:rgba(59,67,77,1);*/
+background:rgba(59,67,77,1);
 -moz-transition:all linear 1s;
 -webkit-transition:all linear 1s;
 -ms-transition:all linear 1s;
@@ -116,6 +115,10 @@ color:#a2a2a2;
 padding: 16px 26px;
 background-color: #4a515b;
 border-radius: 2px;
+border:1px solid #4a515b;
+}
+input[type="email"]:hover{
+border:1px solid #ff6868;
 }
 input[type="submit"]{
 font:12px/14px 'Open Sans', sans-serif;
@@ -124,7 +127,7 @@ color: #ffffff;
 background-color:#ff6868;
 display: inline-block;
 padding: 16px 30px;
-border-radius:5px;
+border-radius:6px;
 margin-left: 16px;
 }
 input[type="submit"]:hover{
@@ -283,7 +286,7 @@ left: -15px;
 top:30px;
 }
 .services{
-margin-bottom: 87.5px;
+margin-bottom: 86.5px;
 }
 .services ul li{
 float: left;
@@ -315,7 +318,7 @@ color:#99a0a8;
 background:url('../images/sliderImg.png')no-repeat;
 background-size:cover;
 padding: 62px 0;
-margin-bottom: 88px;
+margin-bottom: 87px;
 }
 .slideOne{
 width:786px;
@@ -324,9 +327,12 @@ margin:0 auto;
 .designerPic{
 float: left;
 }
+.designerPic img{
+display: block;
+}
 .designerInfo{
 float: left;
-margin-left:20px;
+margin-left:22px;
 width: 460px;
 }
 .repeatitiveHeading{
@@ -435,6 +441,8 @@ background: #4a515b;
 .meter  span {
 display: block;
 height: 100%;
+width: 84%;
+margin-bottom: 0;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,4a515b+0,57535c+29,9a5b61+60,e66566+100 */
 background: #4a515b; /* Old browsers */
 background: -moz-linear-gradient(left,  #4a515b 0%, #4a515b 0%, #57535c 29%, #9a5b61 60%, #e66566 100%); /* FF3.6-15 */
@@ -444,6 +452,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', end
 }
 .skillsInfo{
 margin-bottom: 11px;
+}
+.appDevelopment{
+background:url('../images/iphone.png')no-repeat;
+padding-bottom:88px;
+margin-bottom: 90px;
+}
+.appContent{
+width: 464px;
+margin-left: 258px;
+}
+.appContent h3{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,ff6868+0,ff6c6c+53,ffafaf+100 */
+background: #4a515b; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a515b 0%, #ff6868 0%, #ff6c6c 53%, #ffafaf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4a515b 0%,#ff6868 0%,#ff6c6c 53%,#ffafaf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4a515b 0%,#ff6868 0%,#ff6c6c 53%,#ffafaf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', endColorstr='#ffafaf',GradientType=0 ); /* IE6-9 */
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;	
+margin-bottom: 19.5px;
+}
+.appContent p{
+color:#99a0a8;
+margin-bottom: 17.5px;
+}
+.appContent a{
+font:12px/14px 'Open Sans', sans-serif;
+font-weight: 700; 
+display: inline-block;
+color: #ffffff;
+background-color: #ff6868;
+padding: 16px 27px;
+border-radius: 5px;
+}
+.appContent a:hover{
+background-color: #f50a0a;
 }
 .portfolio h2{
 margin-bottom: 60px;
@@ -519,16 +563,12 @@ float:none;
 .portfolio ul.portfolioImages li:hover .projectInfo{
 display: block;
 }
-.portfolio ul.portfolioImages li.active .projectInfo{
-display: block;
-}
 .portfolio ul.portfolioImages li img{
 display: block;
 }
 .clients{
 background-color: #38404a;
-padding-top:46px;
-padding-bottom:46px;
+padding:46px 0;
 margin-bottom: 88px;
 }
 .clients ul li{
@@ -560,11 +600,17 @@ margin-top:12px;
 .clientTwitter{
 background-image: url('../images/sprite.png');
 background-repeat: no-repeat;
-background-position: 0 -83px;
+background-position: -307px -188px;
 display: inline-block;
 vertical-align: middle;
 width:176px;
-height: 27px;
+height: 28px;
+}
+.clients ul li a{
+display: block;
+}
+.clients ul li a:hover .clientTwitter{
+background-position:0 -83px;
 }
 .clientSpotify{
 background-image: url('../images/sprite.png');
@@ -629,23 +675,14 @@ float:left;
 margin-left:20px;
 width: 215px;
 }
-.blogInfo h3{
+.blogInfo a{
 font:24px/26px 'Open Sans', sans-serif;
 font-weight: 800;
+display: inline-block;
 color: #3a424c;
 margin-bottom: 5px;
 }
-.blogInfo h3.active{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,ff6868+0,ff6d6d+54,ffaeae+100 */
-background: #4a515b; /* Old browsers */
-background: -moz-linear-gradient(top,  #4a515b 0%, #ff6868 0%, #ff6d6d 54%, #ffaeae 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #4a515b 0%,#ff6868 0%,#ff6d6d 54%,#ffaeae 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #4a515b 0%,#ff6868 0%,#ff6d6d 54%,#ffaeae 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', endColorstr='#ffaeae',GradientType=0 ); /* IE6-9 */
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.blog ul li:hover .blogInfo h3{
+.blog ul li:hover .blogInfo a{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,ff6868+0,ff6d6d+54,ffaeae+100 */
 background: #4a515b; /* Old browsers */
 background: -moz-linear-gradient(top,  #4a515b 0%, #ff6868 0%, #ff6d6d 54%, #ffaeae 100%); /* FF3.6-15 */
@@ -692,12 +729,11 @@ height: 12px;
 width: 13px;
 margin-left: 7px;
 background-position:-178px 0;
-margin-top: -3px;
+margin-top: -4px;
 }
 .newsLetter{
 background:url('../images/newsletter.png')no-repeat;
-padding-top: 62px;
-padding-bottom: 62px;
+padding: 62px 0;
 background-size: cover;
 margin-bottom: 92px;
 }
@@ -799,6 +835,9 @@ text-align: left;
 .pricingList ul li{
 margin-bottom: 16px;
 }
+.pricingList input{
+margin-left: 0;
+}
 .pricingList ul li:last-child{
 margin-bottom: 0;
 }
@@ -812,8 +851,8 @@ margin-left: 14px;
 .caseStudies{
 text-align: center;
 background-color: #38404a;
-padding-top: 60px;
-padding-bottom: 60px;
+padding: 60px 0;
+margin-bottom: 91px;
 }
 .caseStudies p{
 font:32px/48px 'Open Sans', sans-serif;
@@ -846,4 +885,159 @@ background-position: -225px 12px;
 }
 .caseText{
 margin-bottom: 16px;
+}
+.contact{
+text-align: center;
+margin-bottom: 92px;
+}
+.contact h2{
+margin-bottom: 64px;
+}
+.contact input{
+height: 46px;
+width: 300px;
+margin-right: 16px;
+box-sizing: border-box;
+font:12px/14px 'Open Sans', sans-serif;
+padding: 16px 25px;
+color:#a2a2a2; 
+font-weight: 700;
+border-radius: 7px;
+background-color: #f5f7f9;
+border:1px solid #ffffff;
+}
+.contact input:hover{
+border:1px solid #ff6868;
+}
+.contact input:focus{
+background-color:#3a424c;
+}
+.contact input.website{
+margin-right: 0;
+}
+.contact form{
+margin-bottom: 0;
+}
+.contact textarea:focus{
+background-color:#3a424c;
+}
+textarea{
+margin-top: 20px;
+display:block;
+width: 100%;
+border:0;
+font:12px/14px 'Open Sans', sans-serif;
+padding: 16px 25px;
+color:#a2a2a2; 
+font-weight: 700;
+border-radius: 5px;
+background-color: #f5f7f9;
+box-sizing: border-box;
+outline: none;
+height: 256px;
+margin-bottom: 20px;
+border:1px solid #ffffff;
+}
+textarea:hover{
+border:1px solid #ff6868;
+}
+.contact input[type="submit"]{
+background-color:#ff6868;
+color: #ffffff;
+width: 102px;
+height: 46px;
+margin-right: 0;
+margin-left: 0;
+}
+.contact input[type="submit"]:hover{
+background-color: #f20b0b;
+}
+.footer{
+background-color: #38404a;
+padding:60px 0;
+}
+.copyright{
+float: left;
+width: 220px;
+}
+.copyright a{
+display: block;
+padding-bottom: 7px;
+border-bottom: 1px solid #49515c;
+}
+.copyright img{
+display: block;
+}
+.copyright span{
+font:12px/21px 'Gentium Book Basic', serif;
+font-weight: 400;
+display: inline-block;
+color:#99a0a8;
+padding-top: 3.5px;
+}
+.copyright .pink{
+color:#ff6868;
+}
+.socialIcons{
+float: right;
+margin-top: 12px;
+}
+.socialIcons ul li{
+float: left;
+margin-right: 10px;
+}
+.socialIcons ul li.clear{
+float:none;
+margin-right: 0;
+}
+.socialIcons ul li:nth-child(3){
+margin-right: 0;
+}
+.socialIcons ul li a{
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+height: 24px;
+width: 24px;
+border-radius: 50%;
+border:2px solid #ff6868;
+}
+.socialIcons ul li a:hover{
+background-color: #ff6868;
+}
+.socialIcons ul li a:hover .footerFb{
+background-position:-276px 0;
+}
+.footerFb{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+height:10px;
+width: 5px; 
+background-position:-265px 0;
+}
+.footerTwitter{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+height:8px;
+width: 10px; 
+background-position:-303px 0;
+}
+.socialIcons ul li a:hover .footerTwitter{
+background-position:-316px 0;
+}
+.footerLinkedin{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+height:10px;
+width: 10px; 
+background-position:-288px 0;
+}
+.socialIcons ul li a:hover .footerLinkedin{
+background-position:-329px 0;
 }
