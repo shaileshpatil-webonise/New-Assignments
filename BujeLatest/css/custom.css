@@ -17,13 +17,13 @@ margin: 0 auto;
 }
 .headerPlaceholder{
 height: 93px;
-margin-bottom:107px;
+margin-bottom:109px;
 }
 .headerWrapper{
 background:url('../images/headerbanner.png')no-repeat;
 background-size: cover;
-padding-bottom: 107px;
-margin-bottom: 90px;
+padding-bottom: 109px;
+margin-bottom: 91px;
 }
 .header{
 border-top:2px solid #ff6868;
@@ -32,19 +32,19 @@ position: fixed;
 top: 0;
 width: 100%;
 background:rgba(52,60,70,0);
--moz-transition:all linear 1s;
--webkit-transition:all linear 1s;
--ms-transition:all linear 1s;
--o-transition:all linear 1s;
-transition:all linear 1s;
+-moz-transition:all linear 0.6s;
+-webkit-transition:all linear 0.6s;
+-ms-transition:all linear 0.6s;
+-o-transition:all linear 0.6s;
+transition:all linear 0.6s;
 }
 .scrollHeader{
 background:rgba(59,67,77,1);
--moz-transition:all linear 1s;
--webkit-transition:all linear 1s;
--ms-transition:all linear 1s;
--o-transition:all linear 1s;
-transition:all linear 1s;
+-moz-transition:all linear 0.6s;
+-webkit-transition:all linear 0.6s;
+-ms-transition:all linear 0.6s;
+-o-transition:all linear 0.6s;
+transition:all linear 0.6s;
 z-index: 30;
 }
 .logo{
@@ -82,7 +82,6 @@ color:#f20b0b;
 }
 .deliverContent p{
 color:#ffffff;
-width: 423px;
 margin-bottom: 26.5px;
 }
 .repeatitivePara{
@@ -126,9 +125,9 @@ font-weight: 700;
 color: #ffffff;
 background-color:#ff6868;
 display: inline-block;
-padding: 16px 30px;
+padding: 16px 28px;
 border-radius:6px;
-margin-left: 16px;
+margin-left: 20px;
 }
 input[type="submit"]:hover{
 background-color: #f20b0b;
@@ -151,6 +150,7 @@ vertical-align: middle;
 text-align: center;
 height: 46px;
 width: 46px;
+box-sizing: border-box;
 border-radius: 50%;
 border:2px solid #fa6767; 
 }
@@ -239,7 +239,6 @@ position: absolute;
 width: 28px;
 height: 65px;
 border-radius: 50%;
-background: transparent;
 border-bottom: 3px solid #ff6868;
 border-right: 3px solid transparent;
 border-left: 3px solid  transparent;
@@ -252,7 +251,6 @@ position: absolute;
 width: 28px;
 height: 65px;
 border-radius: 50%;
-background: transparent;
 border-top: 3px solid  #ff6868;
 border-right:3px solid  transparent;
 border-left: 3px solid transparent;
@@ -265,7 +263,6 @@ position: absolute;
 width: 28px;
 height: 65px;
 border-radius: 50%;
-background: transparent;
 border-top: 3px solid  #ff6868;
 border-right: 3px solid  transparent;
 border-left: 3px solid  transparent;
@@ -278,7 +275,6 @@ position: absolute;
 width: 28px;
 height: 65px;
 border-radius: 50%;
-background: transparent;
 border-top: 3px solid  #ff6868;
 border-right:3px  solid  transparent;
 border-left: 3px solid transparent;
@@ -286,7 +282,7 @@ left: -15px;
 top:30px;
 }
 .services{
-margin-bottom: 86.5px;
+margin-bottom: 88.5px;
 }
 .services ul li{
 float: left;
@@ -326,6 +322,8 @@ margin:0 auto;
 }
 .designerPic{
 float: left;
+width: 299px;
+height: 296px;
 }
 .designerPic img{
 display: block;
@@ -454,13 +452,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a515b', end
 margin-bottom: 11px;
 }
 .appDevelopment{
-background:url('../images/iphone.png')no-repeat;
-padding-bottom:88px;
-margin-bottom: 90px;
+position: relative;
+padding-bottom:87px;
+margin-bottom: 91px;
+}
+.appDevelopment::before{
+content: '';
+width:80%;
+border-bottom: 2px solid #d6d9d9;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.appContent::after{
+content: '';
+width:20%;
+border-bottom: 2px solid #d6d9d9;
+position: absolute;
+bottom:9px;
+right:0;
+}
+.appDevelopment img{
+position: absolute;
+top:-1px;
+right:20%;
 }
 .appContent{
 width: 464px;
-margin-left: 258px;
+margin-left: 76px;
 }
 .appContent h3{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a515b+0,ff6868+0,ff6c6c+53,ffafaf+100 */
@@ -484,10 +503,13 @@ display: inline-block;
 color: #ffffff;
 background-color: #ff6868;
 padding: 16px 27px;
-border-radius: 5px;
+border-radius: 6px;
 }
 .appContent a:hover{
 background-color: #f50a0a;
+}
+.portfolio{
+margin-bottom: 88px;
 }
 .portfolio h2{
 margin-bottom: 60px;
@@ -513,12 +535,14 @@ border-radius: 6px;
 }
 .portfolio ul.portfolioMenu li a:hover{
 border:1px solid #ff6868;
+color: #ff6868;
 }
 .portfolio ul.portfolioMenu li a.active{
 color: #ffffff;
 background-color: #ff6868;
 padding:9px 21.5px;
 border-radius: 6px;
+border:0;
 }
 .plus{
 background-image:url('../images/sprite.png');
@@ -534,7 +558,7 @@ margin-left: 14px;
 width: 325px;
 height: 326px;
 text-align: center;
-background:rgba(0,0,0,0.4);
+background:rgba(0,0,0,0.5);
 display: none;
 top:0;
 position: absolute;
@@ -563,13 +587,20 @@ float:none;
 .portfolio ul.portfolioImages li:hover .projectInfo{
 display: block;
 }
+.projectImage{
+width: 325px;
+height: 322px;
+}
 .portfolio ul.portfolioImages li img{
 display: block;
+}
+.newprojectImage{
+width: 325px;
+height: 326px;
 }
 .clients{
 background-color: #38404a;
 padding:46px 0;
-margin-bottom: 88px;
 }
 .clients ul li{
 float: left;
@@ -666,6 +697,8 @@ margin-right:0;
 }
 .blogPic{
 float: left;
+width: 220px;
+height: 218px;
 }
 .blogPic img{
 display: block;
@@ -862,14 +895,15 @@ margin: 0 auto;
 margin-bottom: 12px;
 }
 .caseStudies span{
-display: inline-block;
+display:inline-block;
 font:17px/21px 'Gentium Book Basic', serif;
 font-weight: 400;
+color:#ffffff;
 }
 .bujeText{
-color: #ffffff;
+margin-bottom: 18px;
 }
-.time{
+.caseStudies span.time{
 color: #99a0a8;
 }
 .caseStudies a{
@@ -882,9 +916,6 @@ border-radius: 50%;
 height: 36px;
 width: 36px;
 background-position: -225px 12px;
-}
-.caseText{
-margin-bottom: 16px;
 }
 .contact{
 text-align: center;
@@ -946,6 +977,7 @@ background-color:#ff6868;
 color: #ffffff;
 width: 102px;
 height: 46px;
+border-radius: 6px;
 margin-right: 0;
 margin-left: 0;
 }
@@ -973,10 +1005,11 @@ font:12px/21px 'Gentium Book Basic', serif;
 font-weight: 400;
 display: inline-block;
 color:#99a0a8;
-padding-top: 3.5px;
+margin-top: 3.5px;
 }
 .copyright .pink{
 color:#ff6868;
+margin-top: 0;
 }
 .socialIcons{
 float: right;
