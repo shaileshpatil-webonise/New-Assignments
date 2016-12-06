@@ -263,6 +263,7 @@ margin-right: 0;
 }
 .services{
 text-align: center;
+margin-bottom: 128px;
 }
 .services .tagLine{
 margin-bottom: 70px;
@@ -290,18 +291,19 @@ margin-bottom: 33px;
 padding:36px 48px;
 }
 .servicesTypes::after{
- background:url('../images/servicesborder.png');
- width:170px;
- height:1px;
- display:inline-block;
- margin-top: 95px;
+background:url('../images/servicesborder.png');
+width:170px;
+height:1px;
+display:inline-block;
+margin-top: 95px;
 }
 .prices .tagLine{
 margin-bottom: 95px;
 }
 .priceSection{
 background-color:#f6f6f6;
-padding: 48px 47px 50px 53px;
+padding-top: 48px;
+padding-bottom: 50px;
 }
 .priceSection h4{
 margin-top: 0;
@@ -341,4 +343,220 @@ padding: 8px 45px;
 }
 .priceSection a:hover{
 background-color: #fa850a;
+}
+.priceSection:hover{
+background: #ffffff;
+border:1px solid #cccccc;
+}
+.sentance{
+background:url('../images/sentancebanner.png');
+text-align: center;
+padding: 124px 0;
+background-size: cover;
+margin-bottom: 94px;
+}
+.sentance h2{
+font:32px/51px 'Open Sans', sans-serif;
+font-weight: 700;
+color: #ffffff;
+margin:0;
+}
+.sentance h2.borderBottom{
+background: url(../images/sentanceborder.png)no-repeat center bottom;
+}
+.coolFacts{
+background:url('../images/coolfactsbanner.png')no-repeat;
+background-size: cover;
+text-align: center;
+padding: 85px 0;
+margin-bottom: 94px;
+}
+.coolFacts h3{
+color: #ffffff;
+}
+.coolFacts .tagLine{
+color: #ffffff;
+margin-bottom: 67px;
+}
+.coolFacts ul{
+list-style-type: none;
+padding-left: 0;
+margin-bottom: 0;
+}
+.coolFacts ul li{
+float:left;
+margin-right: 52px;
+margin-bottom: 0;
+}
+.coolFacts ul li.clear{
+float:none;
+}
+.coolFacts i{
+color: #ffffff;
+float: left;
+}
+.factsInfo{
+float: left;
+width: 162px;
+text-align:left;
+margin-left: 26px;
+}
+.factsInfo h6{
+font:56px/67px 'Open Sans', sans-serif;
+font-weight: 700;
+color: #ffffff;
+margin-top:-14px;
+margin-bottom: 7px;
+}
+.factsInfo span{
+font:16px/19px 'Open Sans', sans-serif;
+font-weight: 700;
+color: #c59a6d;
+display: inline-block;
+}
+.contact{
+text-align: center;
+}
+.contact .tagLine{
+margin-bottom: 70px;
+}
+textarea{
+display: block;
+width: 100%;
+font:14px/19px 'Open Sans', sans-serif;
+background-color: #f6f6f6;
+border: 1px solid #cccccc;
+font-weight: 400;
+color: #777777;
+padding: 17px 16px;
+margin-top: 30px;
+height: 200px;
+margin-bottom: 75px;
+outline: 0;
+}
+textarea:hover{
+border:1px solid #f0800b;
+}
+textarea:focus{
+background-color: #2c2b2a;
+}
+form{
+max-width: 1170px;
+margin:0 auto;
+margin-bottom: 100px;
+}
+input[type="text"]{
+font:14px/19px 'Open Sans', sans-serif;
+font-weight: 400;
+color: #777777;
+padding: 12.5px 16px;
+width: 370px;
+margin-right:26px;
+background-color: #f6f6f6;
+border: 1px solid #cccccc;
+outline: 0;
+}
+input[type="text"]:hover{
+border:1px solid #f0800b;
+}
+input[type="text"]:focus{
+background-color: #2c2b2a;
+}
+input[type="text"].pnoneNumber{
+margin-right: 0;
+}
+input[type="submit"]{
+border: 0;
+outline: 0;
+background-color:#c59a6d;
+font:14px/16px 'Open Sans', sans-serif;
+color: #ffffff;
+font-weight: 700;
+padding: 16px 42px;
+}
+input[type="submit"]:hover{
+background-color: #fa850a;
+}
+.findUs{
+background: url('../images/findbanner.png')no-repeat;
+background-size: cover;
+text-align:center;
+padding-top: 94px;
+padding-bottom: 52px;
+}
+.findUs h3{
+color: #ffffff;
+}
+.findUs .tagLine{
+color: #ffffff;
+margin-bottom: 63px;
+}
+.findUs ul{
+padding-left: 0;
+margin-bottom: 0;
+}
+.findUs ul li{
+float: left;
+margin-right:166px;
+}
+.findUs ul li.clear{
+float:none;
+}
+.findUs i{
+color: #ffffff;
+float: left;
+}
+.contactInfo{
+width:148px;
+float: left;
+margin-left: 33px;
+text-align: left;
+}
+.findUs span{
+color: #ffffff;
+display: block;
+font:14px/19px 'Open Sans', sans-serif;
+font-weight: 400;
+margin-bottom: 2px;
+}
+.findUs h4{
+margin-top: 0;
+margin-bottom: 25px;
+}
+.footer{
+color: #191918;
+padding: 53px 0 48px;
+}
+.footer span{
+font:14px/16px 'Open Sans', sans-serif;
+float: left;
+font-weight: 400;
+}
+.footer ul{
+float: right;
+padding-left: 0;
+list-style-type: none;
+margin-bottom: 0;
+}
+.footer ul li{
+float: left;
+margin-right: 20px;
+}
+.footer ul li:nth-child(7){
+margin-right: 0;
+}
+.footer ul li.clear{
+float: none;
+margin-right: 0;
+}
+.footer ul li i{
+display: block;
+}
+.footer ul li a{
+display: block;
+text-decoration: none;
+color: #191918;
+}
+.footer ul li a:hover{
+color: #c59a6d;
 }
