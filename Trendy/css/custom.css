@@ -90,7 +90,7 @@ font:56px/67px 'Bebas Neue';
 color: #1a1918;
 text-align: center;
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom:23px;
 }
 .aboutUs .tagLine{
 margin-bottom: 73px;
@@ -193,8 +193,8 @@ display: inline-block;
 .progressLine a:hover{
 background-color:#fa850a;
 }
-.team h3{
-margin-bottom: 23px;
+.aboutUs .team .tagLine{
+margin-bottom:70px;
 }
 .team > ul{
 width: 770px;
@@ -260,4 +260,85 @@ display: block;
 .team ul.socialIcons li.clear{
 float: none;
 margin-right: 0;
+}
+.services{
+text-align: center;
+}
+.services .tagLine{
+margin-bottom: 70px;
+}
+.servicesTypes{
+margin-bottom:93px;
+}
+.servicesTypes i{
+color: #c5996c;
+}
+.servicesTypes .OuterSpace{
+border:1px solid #cccccc;
+padding: 36px 34px;
+margin-bottom: 33px;
+}
+.servicesTypes h4{
+margin-top: 0;
+}
+.services .infoPara{
+margin-bottom: 0;
+}
+.servicesTypes .bulb{
+border:1px solid #cccccc;
+margin-bottom: 33px;
+padding:36px 48px;
+}
+.servicesTypes::after{
+ background:url('../images/servicesborder.png');
+ width:170px;
+ height:1px;
+ display:inline-block;
+ margin-top: 95px;
+}
+.prices .tagLine{
+margin-bottom: 95px;
+}
+.priceSection{
+background-color:#f6f6f6;
+padding: 48px 47px 50px 53px;
+}
+.priceSection h4{
+margin-top: 0;
+margin-bottom: 10px;
+}
+.priceSection strong{
+font:72px/86px 'Open Sans', sans-serif;
+font-weight: 700;
+color:#1a1918;
+display: inline-block;
+}
+.priceSection span.monthly{
+font-weight: 700;
+padding-bottom: 26px;
+border-bottom: 1px solid #c69b6e;
+margin-bottom: 28px;
+}
+.priceSection span{
+font:14px/16px 'Open Sans', sans-serif;
+font-weight:400;
+color:#1a1918;
+display: table;
+margin: 0 auto;
+margin-bottom:16px;
+}
+.priceSection span.performance{
+margin-bottom: 45px;
+}
+.priceSection a{
+font:14px/16px 'Open Sans', sans-serif;
+font-weight: 700;
+color: #ffffff;
+background-color:#c59a6d;
+text-decoration: none;
+display: inline-block;
+padding: 8px 45px;
+}
+.priceSection a:hover{
+background-color: #fa850a;
 }
