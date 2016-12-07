@@ -197,7 +197,7 @@ background-color:#fa850a;
 margin-bottom:70px;
 }
 .team > ul{
-width: 770px;
+max-width: 770px;
 margin: 0 auto;
 list-style-type: none;
 padding-left: 0;
@@ -260,6 +260,19 @@ display: block;
 .team ul.socialIcons li.clear{
 float: none;
 margin-right: 0;
+}
+.works{
+text-align: center;
+margin-bottom: 94px;
+background-color:#1b1a18;
+padding: 94px 0;
+}
+.works h3{
+color: #ffffff;
+}
+.works .tagLine{
+color: #ffffff;
+margin-bottom: 70px;
 }
 .services{
 text-align: center;
@@ -627,4 +640,41 @@ font:16px/22px 'Open Sans', sans-serif;
 color: #191918;
 max-width: 770px;
 margin: 0 auto;
+}
+
+.slideshow { margin: auto }
+.slideshow img {
+ padding: 14px;
+border:1px solid #555555;
+margin-right: 30px;
+}
+.cycle-pager { position: static; margin-top: 5px }
+.cycle-pager span.cycle-pager-active{
+color:#D69746;
+}
+.cycle-pager span{
+    font-family: arial;
+    font-size: 50px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: #ddd;
+    cursor: pointer;
+}
+.cycle-pager > *{
+cursor: pointer;
+}
+.center{
+margin-top: 40px;
+}
+.center a{
+border: 1px solid #ffffff;
+padding: 11px 21px;
+display: inline-block;
+}
+.center i{
+color:#c59a6d;
+}
+#next{
+margin-left: 28px;
 }
