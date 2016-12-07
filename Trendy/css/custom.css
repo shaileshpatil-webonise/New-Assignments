@@ -364,6 +364,39 @@ margin:0;
 .sentance h2.borderBottom{
 background: url(../images/sentanceborder.png)no-repeat center bottom;
 }
+.testimonials{
+text-align: center;
+margin-bottom: 96px;
+}
+.testimonials .tagLine{
+margin-bottom: 70px;
+}
+.clients{
+text-align: center;
+}
+.clients ul{
+list-style-type: none;
+padding-left: 0;
+max-width: 1170px;
+margin: 0 auto;
+}
+.clients ul li{
+float: left;
+margin-right: 30px;
+}
+.clients ul li:nth-child(6){
+margin-right: 0;
+}
+.clients ul li a{
+display: block;
+}
+.clients ul li img{
+display: block;
+}
+.clients ul li.clear{
+float: none;
+margin-right: 0;
+}
 .coolFacts{
 background:url('../images/coolfactsbanner.png')no-repeat;
 background-size: cover;
@@ -559,4 +592,39 @@ color: #191918;
 }
 .footer ul li a:hover{
 color: #c59a6d;
+}
+.example-pager{
+text-align: center;
+width: 100%;
+z-index: 50;
+overflow: hidden;
+}
+.example-pager > *{
+cursor: pointer;
+}
+.example-pager span{
+font-size: 30px;
+width: 16px;
+height:16px;
+display: inline-block;
+color: #ddd;
+}
+.example-pager span.cycle-pager-active{
+color:#D69746;
+}
+.testimonialsSlider{
+margin-bottom: 195px;
+}
+.cycle-slideshow{
+max-width: 150px;
+margin: 0px auto 26px;
+padding:0px;
+position: relative;
+}
+.center{
+text-align: center;
+font:16px/22px 'Open Sans', sans-serif;
+color: #191918;
+max-width: 770px;
+margin: 0 auto;
 }
