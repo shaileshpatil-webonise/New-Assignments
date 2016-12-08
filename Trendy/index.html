@@ -38,42 +38,44 @@
    <body>
       <nav class="navbar navbar-default header navbar-fixed-top">
          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand logo" href="#" title="Trendy"><img src="images/logo.png" alt="Trendy"></a>
+            <div class="row">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand logo" href="#" title="Trendy"><img src="images/logo.png" alt="Trendy"></a>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right headerMenu">
+                     <li><a href="#" class="active" title="HOME">HOME<span class="sr-only">(current)</span></a></li>
+                     <li><a href="#about" title="ABOUT">ABOUT</a></li>
+                     <li><a href="#service" title="SERVICES">SERVICES</a></li>
+                     <li><a href="#work" title="WORKS">WORKS</a></li>
+                     <li><a href="#price" title="PRICING">PRICING</a></li>
+                     <li><a href="#client" title="CLIENTS">CLIENTS</a></li>
+                     <li><a href="#facts" title="BLOG">BLOG</a></li>
+                     <li><a href="#contacts" title="CONTACT">CONTACT</a></li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right headerMenu">
-                  <li><a href="#" class="active" title="HOME">HOME<span class="sr-only">(current)</span></a></li>
-                  <li><a href="#" title="ABOUT">ABOUT</a></li>
-                  <li><a href="#" title="SERVICES">SERVICES</a></li>
-                  <li><a href="#" title="WORKS">WORKS</a></li>
-                  <li><a href="#" title="PRICING">PRICING</a></li>
-                  <li><a href="#" title="CLIENTS">CLIENTS</a></li>
-                  <li><a href="#" title="BLOG">BLOG</a></li>
-                  <li><a href="#" title="CONTACT">CONTACT</a></li>
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
          </div>
          <!-- /.container -->
       </nav>
       <div class="designingBanner">
          <h2 class="border">WE ARE</h2>
-         <h2 class="bottomSpace">DESINING</h2>
+         <h2 class="bottomSpace">DESIGNING</h2>
          <span class="tagLine">And We Are Doing It Well</span>
-         <a href="#" title="Scroll To Down"><i class="glyphicon glyphicon-chevron-down 
+         <a href="#about" title="Scroll To Down"><i class="glyphicon glyphicon-chevron-down 
             " aria-hidden="true"></i></a>
       </div>
       <!--designingBanner-->
-      <div class="aboutUs">
+      <div class="aboutUs" id="about">
          <h3>ABOUT US</h3>
          <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
          <div class="journey">
@@ -123,7 +125,7 @@
             <ul>
                <li>
                   <div class="teamMember">
-                     <img src="images/steve.jpg">
+                     <img src="images/steve.jpg" alt="steave">
                   </div>
                   <!--teamMember-->
                   <span>MIKE<span class="cfo">/ CFO</span></span>
@@ -187,34 +189,34 @@
          <!--team-->
       </div>
       <!--aboutUS-->
-      <div class="works">
-      <div class="container">
-         <h3>WORKS</h3>
-         <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
-         <div class="slideshow" 
-    data-cycle-fx=carousel
-    data-cycle-timeout=0
-    data-cycle-carousel-visible=3
-    data-cycle-next="#next"
-    data-cycle-prev="#prev"
-    data-cycle-pager="#pager"
-    >
-   <img src="images/printdesign.jpg" alt="Printdesign">
-   <img src="images/farmerskitchen.jpg" alt="Farmerskitchen">
-   <img src="images/printdesign.jpg" alt="Printdesign">
-   <img src="images/farmerskitchen.jpg" alt="Farmerskitchen">
-   <img src="images/printdesign.jpg" alt="Printdesign">
-</div>
-
-<div class=center>
-    <a href=# id=prev title="Previous"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
-    <a href=# id=next title="Next"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </a>
-</div>
-
-<div class="cycle-pager" id=pager></div>
-      </div><!--container-->
-      </div><!--works-->
-      <div class="services">
+      <div class="works" id="work">
+         <div class="container">
+            <h3>WORKS</h3>
+            <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
+            <div class="slideshow" 
+               data-cycle-fx=carousel
+               data-cycle-timeout=0
+               data-cycle-carousel-visible=3
+               data-cycle-next="#next"
+               data-cycle-prev="#prev"
+               data-cycle-pager="#pager"
+               >
+               <img src="images/printdesign.jpg" alt="Printdesign">
+               <img src="images/farmerskitchen.jpg" alt="Farmerskitchen">
+               <img src="images/printdesign.jpg" alt="Printdesign">
+               <img src="images/farmerskitchen.jpg" alt="Farmerskitchen">
+               <img src="images/printdesign.jpg" alt="Printdesign">
+            </div>
+            <div class=center>
+               <a href=# id=prev title="Previous"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+               <a href=# id=next title="Next"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </a>
+            </div>
+            <div class="cycle-pager" id=pager></div>
+         </div>
+         <!--container-->
+      </div>
+      <!--works-->
+      <div class="services" id="service">
          <div class="container">
             <h3>SERVICES</h3>
             <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
@@ -236,10 +238,10 @@
                </div>
             </div>
             <!--row-->
-            <div class="prices">
+            <div class="prices" id="price">
                <h3>AND THE PRICES</h3>
                <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
-               <div>
+               <div class="row">
                   <div class="col-md-3">
                      <div class="priceSection">
                         <h4>STARTER</h4>
@@ -269,7 +271,7 @@
                      <!--priceSection-->
                   </div>
                   <div class="col-md-3">
-                     <div class="priceSection">
+                     <div class="priceSection proPrices">
                         <h4>PRO</h4>
                         <strong>50<i class="fa fa-eur" aria-hidden="true"></i></strong>
                         <span class="monthly">monthly</span>
@@ -312,7 +314,6 @@
       <div class="testimonials">
          <h3>TESTIMONIALS</h3>
          <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
-         <div class="testimonialsSlider">
             <div class="cycle-slideshow" 
                data-cycle-fx=scrollHorz
                data-cycle-timeout=2000
@@ -329,9 +330,7 @@
             <!-- empty element for caption -->
             <div id="alt-caption" class="center"></div>
             <div class="example-pager"></div>
-         </div>
-         <!--testinomialsSlider-->
-         <div class="clients">
+         <div class="clients" id="client">
             <h3>CLIENTS</h3>
             <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
             <ul>
@@ -346,7 +345,7 @@
          </div>
       </div>
       <!--testimonials-->
-      <div class="coolFacts">
+      <div class="coolFacts" id="facts">
          <div class="container">
             <h3>SOME COOL FACTS</h3>
             <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
@@ -393,7 +392,7 @@
          <!--container-->
       </div>
       <!--coolFacts-->
-      <div class="contact">
+      <div class="contact" id="contacts">
          <h3>CONTACT US</h3>
          <span class="tagLine">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</span>
          <form>
@@ -483,7 +482,14 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-       <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
-       <script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
+      <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+      <script>
+         $.fn.cycle.defaults.autoSelector = '.slideshow';
+      </script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+             jQuery( '.cycle-slideshow' ).cycle();
+         });
+      </script>
    </body>
 </html>
