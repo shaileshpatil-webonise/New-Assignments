@@ -234,6 +234,9 @@ border:1px solid #ffffff;
 color: #ffffff;
 background-color: #dd251e;
 }
+.releventProperties .mainContent{
+margin-top: 33px;
+}
 .releventProperties{
 width: 1090px;
 margin: 0 auto;
@@ -271,6 +274,211 @@ width: 12px;
 height:7px;
 margin-left: 10px;
 background-position:-171px -3px;  
+}
+.mainContent{
+margin-top: 30px;
+}
+.heart{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+text-align: center;
+height:15px;
+width:19px;
+background-position: 0 -3px;
+}
+.heart:hover{
+background-position:-25px -3px;
+}
+.releventProperties > ul > li{
+border:1px solid #dddddd;
+float: left;
+margin-right:30px;
+width: 250px;
+}
+.releventProperties > ul > li:hover .details{
+margin-top: -50px;
+}
+.releventProperties > ul > li:hover .moreInfo{
+display: block;
+}
+.overlay{
+width: 250px;
+height: 159px;
+padding: 9px;
+}
+.like{
+float: right;
+}
+.subInfo{
+margin-top:113px; 
+}
+.subInfo ul{
+float: left;
+}
+.subInfo ul li{
+float: left;
+margin-right: 11px;
+}
+.subInfo ul li a{
+display: block;
+font-size:11px;
+line-height: 22px;
+font-weight: 400;
+color: #ffffff;
+text-decoration: none;
+}
+.subInfo ul li a:hover .gallery{
+background-position:-1px -28px;
+}
+.subInfo ul li a:hover .videos{
+background-position:-18px -28px;
+}
+.number{
+display: inline-block;
+vertical-align: middle;
+}
+.gallery{
+background-image:url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+width:12px;
+height:11px;
+margin-right: 6px;
+background-position:-189px -3px;
+}
+.videos{
+background-image:url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+width:12px;
+height:11px;
+margin-right: 5px;
+background-position:-207px -4px;
+}
+.propertyPic{
+position: relative;
+}
+.overlay{
+position: absolute;
+top:0;
+}
+.dropPrice{
+float: right;
+}
+.priceBtn{
+padding: 0;
+background-color:transparent;
+color: #ffffff;
+border:none;
+}
+.priceBtn:hover{
+background-color: transparent;
+color: #da251e;
+}
+.subInfo .priceMenu > li > a{
+color:#000000;
+}
+.subInfo .priceMenu > li > a:hover{
+color: #da251e;	
+}
+.subInfo .priceMenu > li{
+float:none;
+margin-right: 0;
+}
+.priceMenu{
+min-width: 100px;
+}
+.details{
+padding: 13px 14px 12px;
+}
+.details >  a{
+font-size: 18px;
+line-height: 22px;
+font-weight: 600;
+color: #da251e;
+margin-bottom:13px;
+display: block;
+text-decoration: none;
+}
+.details span{
+display:inline-block;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+color: #666666;
+}
+.data{
+margin-bottom: 6px;
+}
+.data span.projectOwner{
+max-width:110px;
+float: left;
+}
+.data span.rateInfo{
+float:right;
+margin-top: 17px;
+}
+.buyersInfo a.buyers{
+color:#ff3322;
+float: left;
+text-decoration: none;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+}
+.buyersInfo span.propertyPrice{
+font-size: 14px;
+line-height: 18px;
+color: #444444;
+float:right;
+font-weight: 700;
+}
+.moreInfo{
+border-top:1px solid #dddddd;
+padding: 10px 14px 9px;
+display: none;
+}
+.moreInfo > a{
+text-decoration: none;
+color: #ffffff;
+font-size: 12px;
+line-height: 26px;
+font-weight: 600;
+background-color: #da251e;
+float: left;
+border-radius: 3px;
+padding: 1px 12px;
+border:1px solid #da251e;
+}
+.moreInfo > a:hover{
+color: #da251e;
+background-color: #ffffff;
+border:1px solid #da251e;
+}
+.more{
+float: right;
+margin-top:11px;
+}
+.moreBtn{
+padding: 0;
+font-size: 12px;
+line-height: 12px;
+font-weight: 400;
+color: #222222;
+border:none;
+}
+.moreMenu{
+min-width: 100px;
+}
+.moreMenu li a:hover{
+color: #da251e;
+}
+.moreBtn:hover{
+color: #da251e;
+background-color: #ffffff;	
 }
 .analysisSection{
 text-align: center;
