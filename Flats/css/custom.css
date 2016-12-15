@@ -238,9 +238,9 @@ background-color: #dd251e;
 margin-top: 33px;
 }
 .releventProperties{
-width: 1090px;
+max-width: 1090px;
 margin: 0 auto;
-margin-bottom: 49px;
+margin-bottom: 20px;
 }
 .releventProperties h3{
 font-size: 18px;
@@ -275,9 +275,6 @@ height:7px;
 margin-left: 10px;
 background-position:-171px -3px;  
 }
-.mainContent{
-margin-top: 30px;
-}
 .heart{
 background-image: url('../images/sprite.png');
 background-repeat: no-repeat;
@@ -293,11 +290,17 @@ background-position:-25px -3px;
 .releventProperties > ul > li{
 border:1px solid #dddddd;
 float: left;
-margin-right:30px;
+margin:0 30px 30px 0;
 width: 250px;
+}
+.releventProperties > ul > li:nth-child(4n+4){
+margin-right: 0;
 }
 .releventProperties > ul > li:hover .details{
 margin-top: -50px;
+}
+.releventProperties > ul > li:hover .subInfo{
+margin-top: 63px;
 }
 .releventProperties > ul > li:hover .moreInfo{
 display: block;
@@ -305,7 +308,7 @@ display: block;
 .overlay{
 width: 250px;
 height: 159px;
-padding: 9px;
+padding: 8px;
 }
 .like{
 float: right;
@@ -360,10 +363,42 @@ background-position:-207px -4px;
 }
 .propertyPic{
 position: relative;
+z-index: 20;
+}
+.propertyImg img{
+display: block;
 }
 .overlay{
 position: absolute;
 top:0;
+}
+.topSection > span{
+float: left;
+font-size: 10px;
+line-height:15px;
+color: #ffffff;
+font-weight: 600;
+margin: -9px 0 0 -9px;
+padding: 0 4px;
+}
+.topSection .flash{
+background-color: #4ab4f0;
+}
+.topSection .inventory{
+background-color: #ff9900;
+}
+.topSection .exclusive{
+background-color: #da4815;
+}
+.topSection .workshop{
+background-color: #09dbc5;
+}
+.subInfo > span{
+float: right;
+color:#ffffff;
+font-size: 13px;
+line-height: 22px;
+font-weight: 400; 
 }
 .dropPrice{
 float: right;
@@ -389,10 +424,17 @@ float:none;
 margin-right: 0;
 }
 .priceMenu{
-min-width: 100px;
+min-width: 59px;
+text-align: center;
+}
+.priceMenu > li > a{
+padding: 2px;
 }
 .details{
 padding: 13px 14px 12px;
+z-index: 60;
+position: relative;
+background-color: #ffffff;
 }
 .details >  a{
 font-size: 18px;
@@ -471,7 +513,10 @@ color: #222222;
 border:none;
 }
 .moreMenu{
-min-width: 100px;
+min-width: 80px;
+}
+.moreMenu >li >a{
+padding: 3px;
 }
 .moreMenu li a:hover{
 color: #da251e;
