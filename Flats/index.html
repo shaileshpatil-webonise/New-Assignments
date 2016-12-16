@@ -60,6 +60,88 @@
          <!--container-->
       </div>
       <!--discountSection-->
+      <form class="filterSection">
+         <ul class="clearfix">
+            <li>
+               <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Budget">
+                  Budget
+                  <i class="downArrow"></i>
+                  </button>
+                  <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                     <li><a href="#">30-40LK</a></li>
+                     <li><a href="#">41-53LK</a></li>
+                     <li><a href="#">54-72LK</a></li>
+                  </ul>
+               </div>
+            </li>
+             <li>
+               <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Budget">
+                  Rate / Sqft
+                  <i class="downArrow"></i>
+                  </button>
+                  <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                     <li><a href="#">Rs.2000</a></li>
+                     <li><a href="#">Rs.3000</a></li>
+                     <li><a href="#">Rs.4000</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Budget">
+                  BHK
+                  <i class="downArrow"></i>
+                  </button>
+                  <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                     <li><a href="#">2BHK</a></li>
+                     <li><a href="#">3BHK</a></li>
+                     <li><a href="#">4BHK</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Budget">
+                  Possesion
+                  <i class="downArrow"></i>
+                  </button>
+                  <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                     <li><a href="#">Up to 3 months</a></li>
+                     <li><a href="#">Up to 4 months</a></li>
+                     <li><a href="#">Up to 5 months</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Budget">
+                  Amenities
+                  <i class="downArrow"></i>
+                  </button>
+                  <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                     <li><a href="#">Lift,Car Parking</a></li>
+                     <li><a href="#">Swimming Pool</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <button class="reset" title="Reset"><i class="resetIcon"></i>Reset</button>
+            </li>
+            <li>
+               <input type="checkbox">
+               <span>Show Only Red Coupen Projects</span>
+            </li>
+            <li>
+               <div class="group clearfix">
+                  <a href="#" class="firstBtn active"><i class="grid"></i></a>
+                  <a href="#"><i class="verticalSystem"></i></a>
+               </div>
+            </li>
+         </ul>
+      </form>
+      <!--filterSection-->
       <div class="releventProperties">
          <h3>12 out of 16 relevent properties in Pune-West</h3>
          <div class="dropdown sort">
@@ -906,40 +988,12 @@
             </li>
          </ul>
          <span>&copy;2015 Big Deal Properties (India) Pvt. Ltd.  All Rights Reserved.</span>
-      </div><!--footer-->
+      </div>
+      <!--footer-->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function() {
-         $(".maps").hide();
-         $(".maps:first").show();
-         $(".analysisMenu  li a").click(function () {
-             var tablink = $(this).attr('href');
-             $(".maps").hide();
-             $(tablink).show();
-             $(this).parents(".analysisMenu ").find('li').removeClass("active");
-             $(this).parents(".analysisMenu li").addClass("active");
-             return false;
-         });
-         
-         });
-      </script>
-      <script type="text/javascript">
-         $(document).ready(function() {
-         $(".info").hide();
-         $(".info:first").show();
-         $(".coupenMenu li a").click(function () {
-         var tablink = $(this).attr('href');
-         $(".info").hide();
-         $(tablink).show();
-         $(this).parents(".coupenMenu").find('li').removeClass("active");
-         $(this).parents(".coupenMenu li").addClass("active");
-         return false;
-         });
-         
-         });
-      </script>
+      <script type="text/javascript" src="js/custom.js"></script>
    </body>
 </html>

@@ -64,7 +64,7 @@ padding: 10px 0 15px;
 }
 .previous{
 float: left;
-margin:21px 25px 0 0;
+margin-top:21px;
 }
 .previousPage{
 background-image: url('../images/sprite.png');
@@ -77,11 +77,12 @@ background-position:-288px 0;
 }
 .logo{
 float: left;
+margin-left: 25px;
 }
 .logo img{
 display: block;
 }
-form{
+.header form{
 float: left;
 margin:10px 0  0 38px;
 }
@@ -222,6 +223,120 @@ margin-right: 15px;
 .discountSection a:hover{
 background-color: #ffffff;
 color: #cc0000;
+}
+.filterSection{
+width: 1200px;
+margin: 0 auto 42px;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.filterSection > ul > li{
+float: left;
+}
+.filterSection > ul >li:nth-child(-n+5){
+border-right: 1px solid #dddddd;
+}
+.filterBtn{
+font-size: 11px;
+line-height: 13px;
+color:#666666;
+font-weight: 400;
+border: 0;
+padding: 18.5px;
+width: 170px;
+text-align: left;
+}
+.filterBtn:hover{
+background-color: #ffffff;
+}
+.filterSection > ul > li:nth-child(6){
+margin:12px 0 0 10px;
+}
+.reset{
+font-size: 11px;
+line-height: 13px;
+color: #222222;
+font-weight: 400;
+border: 1px solid #bbbbbb;
+background-color: #ffffff;
+outline:none;
+padding: 4.5px 8px;
+}
+.resetIcon{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+width:10px;
+height: 11px;
+background-position:-226px -1px;
+margin:-3px 5px 0 0; 
+}
+.downArrow{
+float: right;
+margin-top: 5px;
+}
+.filterMenu{
+min-width: 170px;
+}
+.filterMenu li a:hover{
+color: #da251e;
+}
+.filterSection > ul > li:nth-child(7){
+margin:12px 0 0 30px;
+}
+.filterSection > ul > li:nth-child(7) span{
+font-size:11px;
+line-height: 14px;
+font-weight: 400;
+color: #222222;
+display: inline-block;
+max-width: 100px;
+margin-left: 9px;
+}
+input[type="checkbox"]{
+float: left;
+}
+.filterSection > ul > li:last-child{
+margin: 9px 0 0 34px;
+}
+.group{
+border:1px solid #bbbbbb;
+border-radius: 3px;
+}
+.group a{
+float: left;
+padding: 9px;
+}
+.group a:hover{
+background-color: #da251e;
+}
+.firstBtn{
+border-right: 1px solid #bbbbbb;
+}
+.group a.active{
+background-color: #da251e;
+}
+.grid{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+width:10px;
+height: 10px;
+background-position:-75px -27px;
+}
+.verticalSystem{
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: middle;
+width:12px;
+height: 10px;
+background-position: -56px -28px;
+}
+.group a:hover .verticalSystem{
+background-position:-95px -27px;
 }
 .requirementsSection{
 background:url('../images/requirementsbanner.png')no-repeat;
@@ -441,10 +556,6 @@ padding: 0;
 background-color:transparent;
 color: #ffffff;
 border:none;
-}
-.priceBtn:hover{
-background-color: transparent;
-color: #da251e;
 }
 .subInfo .priceMenu > li > a{
 color:#000000;
