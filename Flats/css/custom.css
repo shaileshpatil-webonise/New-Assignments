@@ -139,14 +139,16 @@ margin-right:25px;
 margin-right: 9px;
 }
 .header ul.options li a{
+display: block;
+}
+.header ul.options li a.compare{
 color: #dd251e;
 font-size: 13px;
 line-height: 15px;
 font-weight: 400;
 text-decoration: none;
-display: block;
 }
-.header ul.options li a:hover{
+.header ul.options li a.compare:hover{
 color:#fb1007;
 }
 .header ul.options li a:hover .heart{
@@ -194,13 +196,12 @@ background-size: cover;
 text-align: center;
 padding: 16px 0 21px;
 }
-.discountSection span{
+.discountSection h3{
 font-size: 24px;
 line-height: 34px;
 color: #ffffff;
 font-weight: 400;
 margin-bottom: 19px;
-display:block;
 }
 .discountSection a{
 display: inline-block;
@@ -217,7 +218,6 @@ font-weight: 600;
 .discountSection a.active{
 background-color: #ffffff;
 color: #cc0000;
-padding: 0 13px;
 margin-right: 15px;
 }
 .discountSection a:hover{
@@ -225,7 +225,7 @@ background-color: #ffffff;
 color: #cc0000;
 }
 .filterSection{
-width: 1200px;
+max-width: 1200px;
 margin: 0 auto 42px;
 border-top: 1px solid #dddddd;
 border-bottom: 1px solid #dddddd;
@@ -345,10 +345,10 @@ text-align: center;
 padding: 72px 0;
 margin-bottom: 42px;
 }
-.requirementsSection span{
-display: inline-block;
+.requirementsSection h3{
 font-size: 36px;
 max-width: 519px;
+margin: 0 auto;
 line-height: 52px;
 font-weight: 300;
 color: #ffffff;
@@ -376,8 +376,7 @@ margin-top: 33px;
 }
 .releventProperties{
 max-width: 1090px;
-margin: 0 auto;
-margin-bottom: 20px;
+margin: 0 auto 20px;
 }
 .releventProperties h3{
 font-size: 18px;
@@ -440,29 +439,25 @@ border:1px solid #dddddd;
 float: left;
 margin:0 30px 30px 0;
 width: 250px;
+height: 281px;
+overflow: hidden;
 }
 .releventProperties > ul > li:nth-child(4n+4){
 margin-right: 0;
 }
 .releventProperties > ul > li:hover .details{
 margin-top: -50px;
+-webkit-transition:1s;
 }
-.releventProperties > ul > li:hover .subInfo{
-margin-top: 63px;
+.releventProperties > ul > li:hover .topSection{
+margin-bottom: 63px;
+-webkit-transition: 1s;
 }
 .releventProperties > ul > li:hover .moreInfo{
 display: block;
 }
-.overlay{
-width: 250px;
-height: 159px;
-padding: 8px;
-}
 .topSection a{
 float: right;
-}
-.subInfo{
-margin-top:113px; 
 }
 .subInfo ul{
 float: left;
@@ -488,6 +483,9 @@ background-position:-18px -28px;
 .number{
 display: inline-block;
 vertical-align: middle;
+font-size: 11px;
+line-height: 22px;
+font-weight: 400;
 }
 .gallery{
 background-image:url('../images/sprite.png');
@@ -519,6 +517,12 @@ display: block;
 .overlay{
 position: absolute;
 top:0;
+width: 250px;
+height: 159px;
+padding: 8px;
+}
+.topSection{
+margin-bottom: 113px;
 }
 .topSection > span{
 float: left;
@@ -658,6 +662,7 @@ border:none;
 }
 .moreMenu{
 min-width: 80px;
+margin-left: -37px;
 }
 .moreMenu >li >a{
 padding: 3px;
@@ -897,4 +902,32 @@ color: #666666;
 font-weight: 400;
 font-size: 11px;
 line-height: 13px;
+}
+input[type=checkbox].css-checkbox {
+position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+padding-left:23px;
+height:18px; 
+display:inline-block;
+line-height:18px;
+background-repeat:no-repeat;
+background-position: 0 0;
+font-size:18px;
+vertical-align:middle;
+cursor:pointer;
+margin-top: -16px;
+margin-right: -8px;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+background-position: 0 -18px;
+}
+label.css-label {
+background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_e6364785bfe886ff49a404b90dfce30f.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
