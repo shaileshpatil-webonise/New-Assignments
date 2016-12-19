@@ -28,6 +28,9 @@ border: 0;
 list-style-type: none;
 line-height: 0;
 }
+.mobMenu{
+display:none;
+}
 #backtop {
 position: fixed;
 left:auto;
@@ -780,27 +783,27 @@ font-weight: 400;
 background-color:#222222;
 padding: 50px 0 33px;
 }
-.footer > ul{
+.footer >.container > ul{
 max-width: 1100px;
 margin: 0 auto 38px;
 }
-.footer > ul >li{
+.footer > .container > ul >li{
 float: left;
 margin-right:58px;
 }
-.footer > ul >li:nth-child(2){
+.footer > .container > ul >li:nth-child(2){
 margin-right: 82px;
 }
-.footer > ul >li:nth-child(3){
+.footer > .container > ul >li:nth-child(3){
 margin-right:134px;
 }
-.footer > ul >li:nth-child(4){
+.footer > .container > ul >li:nth-child(4){
 margin-right:111px;
 }
-.footer > ul >li:nth-child(5){
+.footer > .container > ul >li:nth-child(5){
 margin-right:100px;
 }
-.footer > ul >li:last-child{
+.footer > .container > ul >li:last-child{
 margin-right:0;
 }
 .footer h6{
@@ -895,7 +898,7 @@ height: 17px;
 .footer ul.socialIcons li a:hover .linkedin{
 background-position:-149px -1px;
 }
-.footer > span{
+.footer > .container> span{
 display: table;
 margin:0 auto;
 color: #666666;
@@ -930,4 +933,127 @@ background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_e6364785bfe
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+input[type="text"]{
+width:200px;
+}
+.call{
+margin-right: 20px;
+}
+.filterSection > ul > li:nth-child(7){
+margin-left: 20px;
+}
+.filterSection{
+max-width: 970px;
+}
+.filterBtn{
+width: 129px;
+}
+.filterMenu{
+min-width:130px; 
+}
+.overlay{
+width: 220px;
+}
+.releventProperties > ul > li{
+width: 220px;
+margin-right: 20px;
+}
+.footer > .container > ul >li:nth-child(3){
+margin-right: 70px;
+}
+.footer > .container > ul >li:nth-child(4){
+margin-right: 60px;
+}
+.footer > .container > ul >li:nth-child(5){
+margin-right: 40px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.logo{
+margin-left: 15px;
+}
+.header form{
+margin-left: 10px;
+}
+.call{
+margin-right:5px;
+}
+.header ul.options li a.compare{
+font-size: 12px;
+}
+.call span{
+margin-left: 4px;
+font-size: 12px;
+}
+input[type="text"]{
+width:150px;
+}
+.filterSection{
+max-width: 768px;
+}
+.projectBtn{
+width: 120px;
+}
+.header ul.options li{
+margin-right: 8px;
+}
+.filterBtn{
+width: 97px;
+padding: 14.5px;
+}
+.filterSection > ul > li:nth-child(6){
+margin:10px 0 0 5px;
+}
+.filterSection > ul > li:nth-child(7){
+margin: 8px 0 0 10px
+}
+.filterSection > ul > li:nth-child(7) span{
+margin-left: 3px;
+}
+.filterSection > ul > li:last-child{
+margin: 5px 0 0 ;
+}
+.releventProperties > ul > li:nth-child(3n+3){
+margin-right: 0;
+}
+.overlay{
+width: 230px;
+}
+.releventProperties > ul > li{
+width: 230px;
+margin-right: 15px;
+}
+.releventProperties > ul > li:nth-child(4n+4){
+margin-right: 15px;
+}
+.releventProperties > ul > li:last-child{
+margin-right: 0;
+}
+.requirementsSection{
+padding:35px 0;
+}
+.topSpace{
+margin-top: 50px;
+}
+}
+@media (max-width: 767px){
+.header form{
+display:none;
+}
+.call{
+display: none;
+}
+.mobMenu{
+display:none;
+background-color:powderblue;
+width: 100%;
+text-align: center;
+}
+.mobMenu li a{
+display: block;
+font-size: 15px;
+line-height: 22px;
+}
 }
