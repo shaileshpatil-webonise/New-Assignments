@@ -281,6 +281,8 @@ margin-top: 5px;
 }
 .filterMenu{
 min-width: 170px;
+-webkit-box-shadow:0;
+box-shadow: 0;
 }
 .filterMenu li a:hover{
 color: #da251e;
@@ -351,11 +353,10 @@ margin-bottom: 42px;
 .requirementsSection h3{
 font-size: 36px;
 max-width: 519px;
-margin: 0 auto;
+margin: 0 auto 36px;
 line-height: 52px;
 font-weight: 300;
 color: #ffffff;
-margin-bottom: 36px;
 }
 .requirementsSection a{
 display: table;
@@ -938,7 +939,6 @@ background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_e6364785bfe
 -ms-user-select: none;
 user-select: none;
 }
-
 @media (min-width: 992px) and (max-width: 1199px){
 input[type="text"]{
 width:200px;
@@ -975,7 +975,6 @@ margin-right: 60px;
 margin-right: 40px;
 }
 }
-
 @media (min-width: 768px) and (max-width: 991px){
 .logo{
 margin-left: 15px;
@@ -1043,8 +1042,10 @@ padding:35px 0;
 .topSpace{
 margin-top: 50px;
 }
+.projectMenu{
+min-width: 120px;
 }
-
+}
 @media (max-width: 767px){
 .header form{
 display:none;
@@ -1054,16 +1055,16 @@ display: none;
 }
 .mobMenu{
 display:none;
-background-color:powderblue;
+background-color:#f5f5f5;
 width: 100%;
 text-align: center;
 padding: 20px 0;
 }
 input[type="text"]{
-	display:block;
-	width: 185px;
-	float: none;
-	margin: 0 auto 10px;
+display:block;
+width: 185px;
+float: none;
+margin: 0 auto 10px;
 }
 .projectType{
 float:none;
@@ -1072,9 +1073,6 @@ margin: 0 auto;
 .projectMenu{
 left:50%;
 margin-left: -92px;
-}
-.filterSection{
-display:none;
 }
 .releventProperties h3{
 font-size: 15px;
@@ -1123,7 +1121,7 @@ padding: 20px 0;
 }
 .accord{
 width:150px;
-margin: 0 auto;
+margin: 0 auto 15px;
 }
 .accord > li{
 margin-bottom: 10px;
@@ -1162,11 +1160,116 @@ float: left;
 margin-right: 10px;
 }
 .footerMob span{
-    display: table;
-    margin: 0 auto;
-    color: #666666;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
+display: table;
+margin: 0 auto;
+color: #666666;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+}
+.filterSection{
+width: 170px;
+border-top:0;
+}
+.filterSection > ul >li:nth-child(-n+5){
+border:none;
+}
+.filterSection > ul > li{
+float: none;
+}
+.filterSection > ul > li:nth-child(6){
+margin-left: 0;
+text-align: center;
+}
+.reset{
+	display: inline-block;
+}
+.filterSection > ul > li:last-child{
+margin:9px 0 10px 0;
+text-align: center;
+}
+.group{
+display: inline-block;
+}
+.discountSection h3{
+font-size: 19px;
+}
+.discountSection a{
+font-size: 11px;
+padding: 0 11px;
+}
+.filterBtn{
+font-size: 12px;
+}
+.requirementsSection h3{
+font-size: 28px;
+line-height: 44px;
+margin-bottom: 20px;
+}
+.requirementsSection a{
+font-size: 12.5px;
+padding: 7.5px 7px;
+}
+}
+@media (max-width: 480px){
+.analysisSection h3{
+font-size: 23px;
+margin: 0 0 20px;
+line-height: 30px;
+}
+.analysisMenu li a{
+font-size: 11px;
+padding: 0 4px 7px;
+}
+.releventProperties{
+margin-bottom: 0;
+}
+.requirementsSection h3{
+font-size:19px;
+line-height: 30px;
+margin-bottom:15px;
+}
+.requirementsSection{
+padding: 30px 0;
+}
+.couponInfo{
+padding: 0 15px;
+}
+.mainInfo h4{
+font-size: 30px;
+}
+.coupenMenu li a{
+font-size: 11px;
+line-height: 26px;
+padding: 1px 14px;
+}
+.analysisMenu li{
+margin-right: 0;
+}
+input[type="text"]{
+font-size: 13px;
+line-height: 14px;
+margin-bottom: 7px;
+width: 240px;
+}
+.projectBtn{
+font-size: 13px;
+line-height: 14px;	
+}
+.projectType .downArrow{
+margin-top: 5px;
+}
+.mobMenu{
+padding: 15px 0;
+}
+.sort{
+top: 0;
+}
+.discountSection h3{
+line-height: 30px;
+}
+.info p{
+font-size: 13px;
+line-height: 24px;
 }
 }
