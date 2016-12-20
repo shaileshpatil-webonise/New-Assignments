@@ -778,6 +778,7 @@ font-size: 14px;
 line-height: 26px;
 color: #666666;
 font-weight: 400;
+min-height: 182px;
 }
 .footer{
 background-color:#222222;
@@ -906,6 +907,9 @@ font-weight: 400;
 font-size: 11px;
 line-height: 13px;
 }
+.footerMob{
+display: none;
+}
 input[type=checkbox].css-checkbox {
 position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
@@ -934,6 +938,7 @@ background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_e6364785bfe
 -ms-user-select: none;
 user-select: none;
 }
+
 @media (min-width: 992px) and (max-width: 1199px){
 input[type="text"]{
 width:200px;
@@ -970,6 +975,7 @@ margin-right: 60px;
 margin-right: 40px;
 }
 }
+
 @media (min-width: 768px) and (max-width: 991px){
 .logo{
 margin-left: 15px;
@@ -1038,6 +1044,7 @@ padding:35px 0;
 margin-top: 50px;
 }
 }
+
 @media (max-width: 767px){
 .header form{
 display:none;
@@ -1050,10 +1057,116 @@ display:none;
 background-color:powderblue;
 width: 100%;
 text-align: center;
+padding: 20px 0;
 }
-.mobMenu li a{
-display: block;
+input[type="text"]{
+	display:block;
+	width: 185px;
+	float: none;
+	margin: 0 auto 10px;
+}
+.projectType{
+float:none;
+margin: 0 auto;
+}
+.projectMenu{
+left:50%;
+margin-left: -92px;
+}
+.filterSection{
+display:none;
+}
+.releventProperties h3{
 font-size: 15px;
-line-height: 22px;
+}
+.sortBtn{
+font-size: 13px;
+}
+.sortMenu{
+left: 50%;
+margin-left:-40px; 
+}
+.releventProperties .mainContent{
+width:250px;
+margin: 30px auto;
+}
+.releventProperties > ul > li{
+margin:0 0 30px 0;
+}
+.analysisMenu li{
+margin-right: 10px;
+}
+.analysisMenu li a{
+font-size: 14px;
+padding: 0 10px 10px;
+}
+.requirementsSection{
+padding:40px 0;
+margin-bottom: 30px;
+}
+.couponPic{
+width: 276px;
+margin: 0 auto;
+float:none;
+}
+.mainInfo{
+float: none;
+margin: 0 auto;
+}
+.footer{
+display: none;
+}
+.footerMob{
+display: block;
+background-color:#222222;
+padding: 20px 0;
+}
+.accord{
+width:150px;
+margin: 0 auto;
+}
+.accord > li{
+margin-bottom: 10px;
+}
+.accord > li i.dropdownIcon{
+float: right;
+margin-top: 8px;
+}
+.accord > li > a{
+text-decoration: none;
+text-align: left;
+position: relative;
+color: #666666;
+display: block;
+font-size: 14px;
+padding: 5px;
+line-height:16px;
+font-weight: 600;
+margin-bottom: 10px;
+border-bottom: 1px solid #666666;
+}
+.content > li >a{
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+color: #bbbbbb;
+text-decoration: none;
+padding: 2px 0;
+display: block;
+}
+.content > li >a:hover{
+color:#da251e;
+}
+.socialIcons li{
+float: left;
+margin-right: 10px;
+}
+.footerMob span{
+    display: table;
+    margin: 0 auto;
+    color: #666666;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
 }
 }
