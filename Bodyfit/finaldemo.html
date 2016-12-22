@@ -2,58 +2,52 @@
 <html>
 <head>
 	<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+</head>
 <style type="text/css">
 .cycle-next, .cycle-prev {
   display: block;
-  color: rgba(255, 255, 255,1);
-  width: 50px;
-  height: 50px;
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  line-height: 50px;
-  font-size: 16px;
+  color: #FFFFFF;
+  font-size:17px;
+  text-decoration: none;
 }
 .cycle-next {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top:21px;
+  left:238px;
   z-index: 102;
 }
 .cycle-prev {
   position: absolute;
-  bottom: 0;
-  right: 51px;
+  top:21px;
+  left:20px;
   z-index: 102;
 }
 .cycle-next:hover, .cycle-prev:hover {
   text-decoration: none;
-  background: rgba(0,0,0,0.8);
   color: rgba(255, 255, 255,1);
 }
 #blog-slides-wrapper {
   position: absolute;
   top: 0;
-  width: 500px;
-  margin-right: 350px;
-}
-#blog-slides {
-
+  width:960px;
 }
 #blog-slides .cycle-slideshow {
   z-index: 20;
-  height: 500px;
-  width: 500px;
+  height:400px;
+  width: 960px;
   float: left;
 }
 
 #blog-slides .cycle-slideshow .slide {
-  width: 500px;
-  height: 500px;
+  width:960px;
+  height: 400px;
 }
 
 #blog-slides .cycle-slideshow .slide-image {
-  width: 500px;
-  height: 500px;
+  width:960px;
+  height: 400px;
   position: relative;
   float: left;
   overflow: hidden;
@@ -69,29 +63,31 @@
 }
 
 #blog-slides-overlay-wrapper {
-  width: 350px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   overflow:hidden;
   z-index: 101;
   position: absolute;
-  right: -350px;
+  left: 0;
   top: 0;
 }
 #blog-slides-overlay-wrapper .blog-slides-overlay {
-  height: 500px;
-  width: 270px;
-  padding: 0 40px;
+  height: 400px;
+  width:300px;
+  padding: 21px 24px;
   background: rgba(0,0,0,0.7);
   display: none;
-  color: #d2d6bb;
   position: absolute;
   left: 0px;
   z-index: 101;
+  box-sizing: border-box;
 }
 
 #blog-slides-wrapper .blog-title {
-  margin: 0 0 20px 0;
-  padding-top: 40px;
+  margin: 116px 0  27px 0;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 33px;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: normal;
@@ -115,11 +111,7 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
 </style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-</head>
 <body>
 <div id="blog-slides-wrapper">
   <div id="blog-slides">
@@ -134,15 +126,18 @@
     data-cycle-prev="#blog-slides .cycle-prev"
     data-cycle-next="#blog-slides .cycle-next"
     >
-      <div class="slide" data-cycle-title="Lorem ac cursus" data-cycle-desc="Odio interdum lobortis. Phasellus mollis lorem ac cursus feugiat. Ut pellentesque mattis aliquet. Aliquam a mauris dictum, pharetra sapien sit amet, volutpat elit.">
-        <div class="slide-image"><img src="http://jquery.malsup.com/cycle2/images/p4.jpg"></div>
+      <div class="slide" data-cycle-title="Indonectetus facilis" data-cycle-desc="Etiam mollis sapien et risus laoreet mollis. Maecenas varius mollis lacus, facilisis dapibus nislbibendum sit amet. Quisque molestie adipiscing nulla sit amet Nam ante neque, vehicula nec .">
+        <div class="slide-image"><img src="images/gymbarbell.jpg"></div>
       </div>
       <div class="slide" data-cycle-title="Proin ullamcorper mi" data-cycle-desc="Nunc eget adipiscing ligula. Proin ullamcorper mi eget odio interdum lobortis. Phasellus mollis lorem ac cursus feugiat. Ut pellentesque mattis aliquet. Aliquam a mauris dictum, pharetra sapien sit amet, volutpat elit.">
-        <div class="slide-image"><img src="http://jquery.malsup.com/cycle2/images/p2.jpg"></div>
+        <div class="slide-image"><img src="images/gympic.jpg"></div>
+      </div>
+      <div class="slide" data-cycle-title="Proin ullamcorper mi" data-cycle-desc="Nunc eget adipiscing ligula. Proin ullamcorper mi eget odio interdum lobortis. Phasellus mollis lorem ac cursus feugiat. Ut pellentesque mattis aliquet. Aliquam a mauris dictum, pharetra sapien sit amet, volutpat elit.">
+        <div class="slide-image"><img src="images/pesos.jpg"></div>
       </div>
     </div>
-    <div id="progress"></div>
-    <a href="#" class="cycle-prev">prev</a><a href="#" class="cycle-next">next</a>
+    
+    <a href="#" class="cycle-prev">&#x3008;	</a><a href="#" class="cycle-next">&#x3009;	</a>
   </div>
   <div id="blog-slides-overlay-wrapper">
     <div class="blog-slides-overlay"></div>
