@@ -227,3 +227,7 @@ margin-right: 12px;
 .example-pager span.cycle-pager-active{
 color:#09a3f9;
 }
+
+.visibility{
+display: none;
+}

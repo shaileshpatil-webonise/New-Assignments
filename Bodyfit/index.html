@@ -3,6 +3,7 @@
    <head>
       <title>BodyFit</title>
       <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" href="css/colorbox.css">
    </head>
    <body>
       <div class="topheader">
@@ -85,8 +86,30 @@
          <!--slider-->
       </div>
       <!--container-->
+      <div class="container">
+         <ul>
+           <li>
+              <div class="equimentPic">
+                  <a href="images/legpressmachine.jpg" class="equiments" ><img src="images/legpressmachine.jpg"></a>
+                  <a href="images/militarybench.jpg" class="equiments visibility"><img src="images/legpressmachine.jpg"></a>
+                  <a href="images/runningmachine.jpg" class="equiments  visibility"><img src="images/legpressmachine.jpg"></a>
+                  <a href="images/statbike.jpg" class="equiments  visibility"><img src="images/legpressmachine.jpg"></a>
+              </div><!--equimentPic-->
+           </li>
+         </ul>
+      </div><!--container-->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
       <script src="http://malsup.github.com/jquery.cycle2.js"></script>
       <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+      <script src="js/jquery.colorbox.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $(".equiments").colorbox({rel:'group1'});
+        $("#click").click(function(){ 
+        $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+          return false;
+        });
+      });
+    </script>
    </body>
 </html>
