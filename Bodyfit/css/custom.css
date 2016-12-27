@@ -17,8 +17,6 @@ font-style: normal;
 }
 body{
 font-family: 'Georgia';
-font-weight: normal;
-font-style: normal;
 }
 .container{
 width: 960px;
@@ -100,6 +98,7 @@ font-size: 13px;
 line-height: 15px;
 color:#ffffff;
 display: block;
+font-weight: normal;
 }
 .header > .container > ul > li  a:hover{
 color: #141414;
@@ -227,7 +226,114 @@ margin-right: 12px;
 .example-pager span.cycle-pager-active{
 color:#09a3f9;
 }
-
 .visibility{
 display: none;
+}
+.gymEquiptments{
+margin-bottom: 27px;
+}
+.gymEquiptments ul{
+border-bottom: 1px solid #d6d6d6;
+}
+.gymEquiptments ul li{
+float: left;
+width:225px;
+padding-bottom: 38px;
+margin-right: 20px;
+}
+.gymEquiptments ul li:nth-child(4){
+margin-right: 0;
+}
+.gymEquiptments ul li.clear{
+float:none;
+width: 0;
+padding-bottom: 0;
+margin-right: 0;
+}
+.equimentPic{
+margin-bottom: 12px;
+}
+.gymEquiptments ul li h3{
+font-size: 16px;
+line-height:22px;
+color: #333333;
+font-weight: normal;
+margin-bottom: 10px;
+}
+.gymEquiptments ul li p{
+margin-bottom: 10px;
+}
+.infoPara{
+font-size: 13px;
+line-height:18px;
+color: #979797;
+font-weight: normal;
+}
+.link{
+text-decoration: none;
+color:#3b7a9d;
+font-size: 13px;
+line-height: 15px;
+}
+.link:hover{
+color: #09a3f9;
+}
+.info > .container > ul > li{
+float: left;
+width: 300px;
+margin-right: 30px;
+} 
+.info > .container > ul > li:nth-child(3){
+margin-right: 0;
+}
+.info > .container > ul > li.clear{
+float:none;
+width: 0;
+margin-right: 0;
+}
+h5{
+font-size: 16px;
+line-height: 19px;
+color: #333333;
+font-weight: normal;
+margin-bottom: 24px;
+}
+.info ul.content li{
+padding-bottom: 12px;
+border-bottom: 1px solid #d8d8d8;
+}
+.info ul.content li:nth-child(n+2){
+padding-top:12px;
+}
+.info ul.content li:last-child{
+border-bottom: 0;
+}
+.info ul.content li a{
+font-size: 13px;
+line-height:18px;
+font-weight: normal;
+color: #3a799d;
+text-decoration: none;
+display: inline-block;
+margin-bottom: 5px;
+}
+.info ul.content li a:hover{
+color: #09a3f9;
+}
+.info ul.content li span{
+display: block;
+font-size: 13px;
+line-height: 18px;
+color: #979797;
+margin-bottom: 8px;
+}
+.youtube{
+display: block;
+margin-bottom: 13px;
+}
+.youtube img{
+display: block;
+}
+.info > .container > ul > li:nth-child(2) p{
+margin-bottom:14px; 
 }
