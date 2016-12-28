@@ -12,7 +12,7 @@
             <img src="images/logo.png" alt="BodyFit">
             </a>
             <form>
-               <input type="text" placeholder="Search Our Website..." required><input type="submit" name="SEARCH">
+               <input type="text" placeholder="Search Our Website..." required><input type="submit" value="SEARCH" title="Search">
             </form>
             <div class="clear"></div>
          </div>
@@ -25,13 +25,6 @@
                <li><a href="#">HOMEPAGE</a></li>
                <li><a href="#">STYLE DEMO</a></li>
                <li><a href="#">FULL WIDTH</a></li>
-               <li>
-                  <a href="#">DROPDOWN</a>
-                  <ul class="headerDropdown">
-                     <li><a href="#">ABOUT US</a></li>
-                     <li><a href="#">CONTACT US</a></li>
-                  </ul>
-               </li>
                <li><a href="#">GALLERY</a></li>
                <li><a href="#">PORTFOLIO</a></li>
                <li><a href="#">LINK TEXT</a></li>
@@ -91,7 +84,7 @@
             <ul>
                <li>
                   <div class="equimentPic">
-                     <a href="images/legpressmachine.jpg" class="equiments"><img src="images/legpressmachine.jpg"></a>
+                     <a href="images/legpressmachine.jpg" class="equiments show"><img src="images/legpressmachine.jpg"></a>
                      <a href="images/militarybench.jpg" class="equiments visibility"><img src="images/militarybench.jpg"></a>
                      <a href="images/runningmachine.jpg" class="equiments  visibility"><img src="images/runningmachine.jpg"></a>
                      <a href="images/statbike.jpg" class="equiments  visibility"><img src="images/statbike.jpg"></a>
@@ -103,7 +96,7 @@
                </li>
                <li>
                   <div class="equimentPic">
-                     <a href="images/militarybench.jpg" class="equimentsa"><img src="images/militarybench.jpg"></a>
+                     <a href="images/militarybench.jpg" class="equimentsa show"><img src="images/militarybench.jpg"></a>
                      <a href="images/statbike.jpg" class="equimentsa  visibility"><img src="images/statbike.jpg"></a>
                      <a href="images/runningmachine.jpg" class="equimentsa  visibility"><img src="images/runningmachine.jpg"></a>
                   </div>
@@ -114,7 +107,7 @@
                </li>
                <li>
                   <div class="equimentPic">
-                     <a href="images/runningmachine.jpg" class="equimentsc"><img src="images/runningmachine.jpg"></a>
+                     <a href="images/runningmachine.jpg" class="equimentsc show"><img src="images/runningmachine.jpg"></a>
                      <a href="images/legpressmachine.jpg" class="equimentsc visibility"><img src="images/legpressmachine.jpg"></a>
                      <a href="images/militarybench.jpg" class="equimentsc visibility"><img src="images/militarybench.jpg"></a>
                   </div>
@@ -125,7 +118,7 @@
                </li>
                <li>
                   <div class="equimentPic">
-                     <a href="images/statbike.jpg" class="equimentsd"><img src="images/statbike.jpg"></a>
+                     <a href="images/statbike.jpg" class="equimentsd show"><img src="images/statbike.jpg"></a>
                      <a href="images/militarybench.jpg" class="equimentsd visibility"><img src="images/militarybench.jpg"></a>
                      <a href="images/legpressmachine.jpg" class="equimentsd visibility"><img src="images/legpressmachine.jpg"></a>
                   </div>
@@ -171,6 +164,47 @@
                </li>
                <li>
                   <h5>Meet The Instructors</h5>
+                  <ul class="instructors">
+                     <li>
+                        <div class="instructorPic">
+                           <img src="images/Danny.jpg">
+                        </div>
+                        <!--instructorPic-->
+                        <div class="instructorInfo">
+                           <h6>Danny</h6>
+                           <span>Cricket</span>
+                           <a href="#" class="link">View Profile >></a>
+                        </div>
+                        <!--instructorInfo-->
+                        <div class="clear"></div>
+                     </li>
+                     <li>
+                        <div class="instructorPic">
+                           <img src="images/mike.jpeg">
+                        </div>
+                        <!--instructorPic-->
+                        <div class="instructorInfo">
+                           <h6>Mike</h6>
+                           <span>Wrestling</span>
+                           <a href="#" class="link">View Profile >></a>
+                        </div>
+                        <!--instructorInfo-->
+                        <div class="clear"></div>
+                     </li>
+                     <li>
+                        <div class="instructorPic">
+                           <img src="images/AndrewKalley.jpg">
+                        </div>
+                        <!--instructorPic-->
+                        <div class="instructorInfo">
+                           <h6>Andrew</h6>
+                           <span>Football</span>
+                           <a href="#" class="link">View Profile >></a>
+                        </div>
+                        <!--instructorInfo-->
+                        <div class="clear"></div>
+                     </li>
+                  </ul>
                </li>
                <li class="clear"></li>
             </ul>
@@ -178,22 +212,17 @@
          <!--container-->
       </div>
       <!--info-->
+      <div class="footer">
+         <div class="container">
+            <span>Copyright &copy; 2013 Domain Name-All Rights Reserved</span>
+         </div>
+         <!--container-->
+      </div>
+      <!--footer-->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
       <script src="http://malsup.github.com/jquery.cycle2.js"></script>
       <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
       <script src="js/jquery.colorbox.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function(){
-          $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-           $(".equiments").colorbox({rel:'equiptments'});
-           $(".equimentsa").colorbox({rel:'equiptmentsa'});
-            $(".equimentsc").colorbox({rel:'equiptmentsc'});
-             $(".equimentsd").colorbox({rel:'equiptmentsd'});
-           $("#click").click(function(){ 
-           $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-             return false;
-           });
-         });
-      </script>
+      <script type="text/javascript" src="js/custom.js"></script>
    </body>
 </html>
