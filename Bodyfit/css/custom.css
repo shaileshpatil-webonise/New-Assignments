@@ -119,10 +119,6 @@ overflow: hidden;
 text-align: center;
 }
 #blog-slides .cycle-slideshow .slide-image img {
-height: 100% !important;
-width: auto !important;
-min-width: none !important;
-max-width: none !important;
 margin: 0 auto;
 }
 #blog-slides-overlay-wrapper {
@@ -216,6 +212,7 @@ display: block;
 }
 .equimentPic img{
 display: block;
+width: 100%;
 }
 .gymEquiptments{
 margin-bottom: 27px;
@@ -323,6 +320,7 @@ margin-bottom: 13px;
 }
 .youtube img{
 display: block;
+width:100%;
 }
 .info > .container > ul > li:nth-child(2) p{
 margin-bottom:14px; 
@@ -372,4 +370,34 @@ font-size: 12px;
 line-height: 12px;
 color:#999999;
 display: block;
+}
+@media (min-width: 768px) and (max-width:1024px){
+.container{
+width: 738px;
+}
+#blog-slides{
+width: 738px;
+}
+#blog-slides .cycle-slideshow{
+width: 738px;
+}
+#blog-slides .cycle-slideshow .slide-image img{
+width: 738px;
+height: 400px;
+}
+.gymEquiptments ul li{
+width: 177px;
+margin-right:10px;
+}
+.info > .container > ul > li{
+width: 237px;
+margin-right: 10px;
+}
+}
+@media (max-width: 767px){
+.container{
+width: 100%;
+padding: 0 15px;
+box-sizing: border-box;
+}
 }
