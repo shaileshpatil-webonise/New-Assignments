@@ -35,6 +35,14 @@ float: left;
 .logo img{
 display: block;
 }
+.bars{
+float: right;
+color: #3b7a9d;
+display:none;
+}
+.infoMob{
+display:none;
+}
 .topheader form{
 float: right;
 }
@@ -385,6 +393,9 @@ width: 738px;
 width: 738px;
 height: 400px;
 }
+.youtube{
+margin-bottom: 25px;
+}
 .gymEquiptments ul li{
 width: 177px;
 margin-right:10px;
@@ -399,5 +410,180 @@ margin-right: 10px;
 width: 100%;
 padding: 0 15px;
 box-sizing: border-box;
+}
+.bars{
+display: block;
+margin-top: 3px;
+}
+.topheader{
+padding: 20px 0;
+}
+.topheader form{
+margin-right: 10px;
+}
+input[type="text"]{
+width: 150px;
+}
+.header{
+display: none;
+padding:5px 0;
+margin-bottom: 10px;
+}
+.header > .container > ul > li{
+float: none;
+margin: 5px 0;
+text-align: center;
+}
+.header > .container > ul > li  a{
+font-size:18px;
+line-height: 20px;
+}
+.slider{
+width: 481px;
+margin: 0 auto 10px;
+height: 200px;
+}
+#blog-slides{
+width: 481px;
+height: 200px;
+}
+#blog-slides-wrapper{
+height: 200px;
+}
+#blog-slides-overlay-wrapper .blog-slides-overlay{
+height: 200px;
+padding: 10px;
+width: 250px;
+}
+#blog-slides .cycle-slideshow{
+width: 481px;
+}
+#blog-slides-overlay-wrapper{
+width:250px;
+height: 200px;
+}
+#blog-slides .cycle-slideshow .slide-image img{
+width: 481px;
+}
+#blog-slides-wrapper .blog-title{
+font-size:17px;
+margin:30px 0 10px;
+line-height: 19px;
+}
+#blog-slides .cycle-slideshow{
+height: 200px;
+}
+#blog-slides-wrapper .button{
+font-size: 13px;
+line-height: 15px;
+}
+#blog-slides-wrapper .blog-info{
+font-size: 12px;
+line-height:18px;
+margin-bottom: 5px;
+}
+.cycle-prev{
+left: 17px;
+top: 10px;
+}
+.cycle-next{
+left:200px;
+top: 10px;
+}
+.example-pager{
+left: -2px;
+top:-12px;
+}
+.gymEquiptments ul li{
+width:48%;
+margin-right:4%;
+}
+.gymEquiptments ul li:nth-child(even){
+margin-right: 0;
+}
+.info{
+display: none;
+}
+.infoMob{
+display: block;
+margin-bottom: 20px;
+}
+button.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+background-color: #ddd;
+}
+button.accordion:after {
+content: '\002B';
+color: #777;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+button.accordion.active:after {
+content: "\2212";
+}
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: 0.6s ease-in-out;
+opacity: 0;
+}
+.panel.show {
+opacity: 1;
+max-height: 500px;  
+}
+.infoMob ul.content li a{
+font-size: 13px;
+line-height: 18px;
+color: #3a799d;
+text-decoration: none;
+display: inline-block;
+margin-bottom: 5px;
+}
+.infoMob ul.content li span{
+display: block;
+font-size: 13px;
+line-height: 18px;
+color: #979797;
+margin-bottom: 8px;	
+}
+.infoMob ul.content li{
+padding: 12px 0;
+border-bottom: 1px solid #d8d8d8;
+}
+.infoMob ul.content li:last-child{
+border-bottom: 0;
+}
+.infoMob ul.content li a:hover{
+color:#09a3f9;
+}
+.youtube{
+margin-top: 10px;
+}
+.infoPara{
+margin-bottom: 10px;
+}
+.infoMob ul.instructors li{
+padding: 15px 0;
+border-bottom: 1px solid #d8d8d8;
+}
+.infoMob ul.instructors li:last-child{
+border-bottom: 0;
+}
+.youtube img{
+height: 290px;
 }
 }

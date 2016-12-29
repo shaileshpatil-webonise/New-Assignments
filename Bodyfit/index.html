@@ -3,6 +3,7 @@
    <head>
       <title>BodyFit</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <link rel="stylesheet" href="css/colorbox.css">
    </head>
@@ -12,6 +13,7 @@
             <a href="#" class="logo" title="BodyFit">
             <img src="images/logo.png" alt="BodyFit">
             </a>
+            <a href="#" class="bars" id="flip"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
             <form>
                <input type="text" placeholder="Search Our Website..." required><input type="submit" value="SEARCH" title="Search">
             </form>
@@ -20,7 +22,7 @@
          <!--container-->
       </div>
       <!--topheader-->
-      <div class="header">
+      <div class="header" id="panel">
          <div class="container">
             <ul>
                <li><a href="#" title="HOMEPAGE">HOMEPAGE</a></li>
@@ -213,6 +215,82 @@
          <!--container-->
       </div>
       <!--info-->
+      <div class="infoMob">
+         <div class="container">
+            <button class="accordion">Latest News & Events</button>
+            <div class="panel">
+               <ul class="content">
+                  <li>
+                     <a href="#" title="PV Sindhu-Silver Medal">PV Sindhu-Silver Medal</a>
+                     <span>Monday 21st January</span>
+                     <p class="infoPara">Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue magnisl magna phasellus sagittitor ant curabiturpis.</p>
+                  </li>
+                  <li>
+                     <a href="#" title="Sakshi Malik-Bronze Medal">Sakshi Malik-Bronze Medal</a>
+                     <span>Monday 21st January</span>
+                     <p class="infoPara">Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue magnisl magna phasellus sagittitor ant curabiturpis.</p>
+                  </li>
+                  <li>
+                     <a href="#" title="Sushil Kumar-Silver Medal">Sushil Kumar-Silver Medal</a>
+                     <span>Monday 21st January</span>
+                     <p class="infoPara">Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue magnisl magna phasellus sagittitor ant curabiturpis.</p>
+                  </li>
+               </ul>
+            </div>
+            <button class="accordion">Take Virtual Tour</button>
+            <div class="panel">
+               <a class='youtube' href="https://www.youtube.com/embed/ht5rAYlsvqE"><img src="images/videoposter.png" alt="Videoposter"></a>
+               <p class="infoPara">Aliquatpede id pellus elit quis in nec consectetuer mattis duis in. Ipsumet ris morbi quis ac nulla aenean trisuscelerit nonummy augue et. Elisicursus aenean sit consequam wisi ames felit phasellenterdum sagittis sit mauris.</p>
+               <a href="#" class="link" title="Read More">Read More >></a>
+            </div>
+            <button class="accordion">Meet The Instructors</button>
+            <div  class="panel">
+               <ul class="instructors">
+                  <li>
+                     <div class="instructorPic">
+                        <img src="images/Danny.jpg" alt="Danny">
+                     </div>
+                     <!--instructorPic-->
+                     <div class="instructorInfo">
+                        <h6>Danny</h6>
+                        <span>Cricket</span>
+                        <a href="#" class="link" title="View Profile">View Profile >></a>
+                     </div>
+                     <!--instructorInfo-->
+                     <div class="clear"></div>
+                  </li>
+                  <li>
+                     <div class="instructorPic">
+                        <img src="images/mike.jpeg" alt="Mike">
+                     </div>
+                     <!--instructorPic-->
+                     <div class="instructorInfo">
+                        <h6>Mike</h6>
+                        <span>Wrestling</span>
+                        <a href="#" class="link" title="View Profile">View Profile >></a>
+                     </div>
+                     <!--instructorInfo-->
+                     <div class="clear"></div>
+                  </li>
+                  <li>
+                     <div class="instructorPic">
+                        <img src="images/AndrewKalley.jpg" alt="Andrew">
+                     </div>
+                     <!--instructorPic-->
+                     <div class="instructorInfo">
+                        <h6>Andrew</h6>
+                        <span>Football</span>
+                        <a href="#" class="link" title="View Profile">View Profile >></a>
+                     </div>
+                     <!--instructorInfo-->
+                     <div class="clear"></div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!--container-->
+      </div>
+      <!--infoMob-->
       <div class="footer">
          <div class="container">
             <span>Copyright &copy; 2013 BodyFit-All Rights Reserved</span>
@@ -225,5 +303,16 @@
       <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
       <script src="js/jquery.colorbox.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
+     <!--  <script>
+         var acc = document.getElementsByClassName("accordion");
+         var i;
+         
+         for (i = 0; i < acc.length; i++) {
+             acc[i].onclick = function(){
+                 this.classList.toggle("active");
+                 this.nextElementSibling.classList.toggle("show");
+           }
+         }
+      </script> -->
    </body>
 </html>
