@@ -43,7 +43,7 @@ display:none;
 .infoMob{
 display:none;
 }
-.topheader form{
+form{
 float: right;
 }
 input{
@@ -56,9 +56,6 @@ border: 1px solid #dddddd;
 padding: 10px;
 width: 250px;
 box-sizing: border-box;
-}
-input[type="text"]:hover{
-border:1px solid #3b7a9d;
 }
 input[type="submit"]{
 border:0;
@@ -195,7 +192,7 @@ width: 100%;
 z-index: 150;
 overflow: hidden;
 position: absolute;
-top:-3px;
+top:-2px;
 left: 9px;
 }
 .example-pager > *{
@@ -379,6 +376,9 @@ line-height: 12px;
 color:#999999;
 display: block;
 }
+.header form{
+display: none;
+}
 @media (min-width: 768px) and (max-width:1024px){
 .container{
 width: 738px;
@@ -411,18 +411,26 @@ width: 100%;
 padding: 0 15px;
 box-sizing: border-box;
 }
+form{
+display: none;
+}
+.header form{
+display:block;
+float: none;
+text-align: center;
+}
+input[type="text"]{
+width: 150px;
+}
+input[type="submit"]{
+background-color: #09a3f9;
+}
 .bars{
 display: block;
 margin-top: 3px;
 }
 .topheader{
 padding: 20px 0;
-}
-.topheader form{
-margin-right: 10px;
-}
-input[type="text"]{
-width: 150px;
 }
 .header{
 display: none;
@@ -466,9 +474,9 @@ height: 200px;
 width: 481px;
 }
 #blog-slides-wrapper .blog-title{
-font-size:17px;
+font-size:20px;
 margin:30px 0 10px;
-line-height: 19px;
+line-height:22px;
 }
 #blog-slides .cycle-slideshow{
 height: 200px;
@@ -585,5 +593,36 @@ border-bottom: 0;
 }
 .youtube img{
 height: 290px;
+}
+}
+@media (max-width:480px){
+.slider{
+width:290px;
+}
+#blog-slides{
+width: 290px;
+}
+#blog-slides .cycle-slideshow{
+width: 290px;
+}
+#blog-slides .cycle-slideshow .slide-image img{
+width: 290px;
+height: 200px;
+}
+#blog-slides-overlay-wrapper .blog-slides-overlay{
+width: 290px;
+}
+#blog-slides-overlay-wrapper{
+width: 290px;
+}
+.cycle-next{
+left: 238px;
+}
+.gymEquiptments ul li{
+width: 100%;
+margin-right: 0;
+float: none;
+text-align: center;
+padding-bottom: 20px;
 }
 }
