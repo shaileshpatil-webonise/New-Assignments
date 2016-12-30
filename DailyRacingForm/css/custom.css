@@ -1,0 +1,11 @@
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p,
+a, img, strong ol, ul, li, form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+body{
+font-family: 'Titillium Web', sans-serif;
+}
