@@ -12,6 +12,7 @@ $("#flip").click(function(){
 $("#panel").slideToggle();
 });
 });
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
@@ -20,6 +21,7 @@ this.classList.toggle("active");
 this.nextElementSibling.classList.toggle("show");
 }
 }
+
 (function ($window) {
 //Configure colorbox call back to resize with custom dimensions 
 $.colorbox.settings.onLoad = function() {
@@ -46,3 +48,9 @@ $(window).resize(function() {
 colorboxResize(true);
 });
 })(jQuery, this, this.document);
+
+$(window).resize(function() {
+if ($(window).width() > 768) {
+$("#panel").show();
+}
+});

@@ -379,6 +379,7 @@ display: block;
 .header form{
 display: none;
 }
+
 @media (min-width: 768px) and (max-width:1024px){
 .container{
 width: 738px;
@@ -405,6 +406,7 @@ width: 237px;
 margin-right: 10px;
 }
 }
+
 @media (max-width: 767px){
 .container{
 width: 100%;
@@ -581,9 +583,6 @@ color:#09a3f9;
 .youtube{
 margin-top: 10px;
 }
-.infoPara{
-margin-bottom: 10px;
-}
 .infoMob ul.instructors li{
 padding: 15px 0;
 border-bottom: 1px solid #d8d8d8;
@@ -595,6 +594,7 @@ border-bottom: 0;
 height: 290px;
 }
 }
+
 @media (max-width:480px){
 .slider{
 width:290px;
