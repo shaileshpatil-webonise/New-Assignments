@@ -115,3 +115,174 @@ margin-top: 6px;
 float: left;
 margin-left: 30px;
 }
+.headerWrapper{
+margin-bottom: 25px;
+}
+.navBar{
+position: relative;
+}
+.navBar > ul{
+float: left;
+}
+.navBar > ul > li{
+float: left;
+position: relative;
+}
+.navBar > ul > li > a{
+font:16px/55px 'Titillium Web', sans-serif;
+display: block;
+text-decoration:none;
+font-weight: 600;
+padding: 0 9px;
+color: #fff;
+background-color: #404041;
+border-right: 1px solid #292929;
+}
+.navBar > ul > li > a:hover{
+background-color:#ec1c24;
+}
+.navBar > ul > li i{
+vertical-align:middle;
+top: 0; 
+font-size: 10px; 
+margin-left: 6px;
+}
+.subMenu{
+position: absolute;
+width:139px;
+left: 0;
+z-index: 100;
+}
+.ppsMenu{
+width: 209px;
+}
+.menuWidth{
+width: 180px;
+}
+.subMenu li a{
+font-size: 14px;
+line-height: 24px;
+padding: 0 13px;
+display: block;
+color: #000;
+text-decoration:none;
+}
+.subMenu li a:hover{
+color: #dd1e25;
+}
+.subMenu{
+display: none;
+border:1px solid #d2d2d2;
+background-color: #fff;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+}
+.navBar > ul > li:hover .subMenu{
+display: block;
+}
+.search{
+float: left;
+position: relative;
+width: 51px;
+height: 55px;
+background-color: #404041;
+cursor: pointer;
+}
+.searchIcon{
+display: inline-block;
+vertical-align: middle;
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+width:16px;
+height: 16px; 
+background-position:-171px 0;
+position: absolute;
+top: 19px;
+left: 18px;
+}
+.navBar form{
+top: 55px;
+position: absolute;
+right: 0;
+width: 230px;
+padding: 5px 0;
+}
+.navBar input{
+border: 0;
+outline:0;
+}
+.navBar input[type="text"]{
+font-size: 14px;
+line-height: 20px;
+}
+#panel{
+display: none;
+}
+.contentWrapper{
+border:1px solid #eeeeee;
+border-radius: 3px;
+padding-top: 9px;
+}
+.bannerWrap{
+float: left;
+width:850px;
+}
+.drfBets{
+width:209px;
+margin: 0 10px;
+text-align: center;
+}
+.drfBets a{
+display: inline-block;
+text-decoration: none;
+}
+.login{
+color: #ffffff;
+font-weight: 400;
+font:17px/19px 'Titillium Web', sans-serif;
+background-color: #005bf0;
+border-radius: 3px;
+padding:8px 26px;
+margin-bottom: 14px;
+}
+.login:hover{
+color: #ffffff;
+}
+.createAcc a{
+color:#005bf0;
+}
+.createAcc{
+font-size: 14px;
+line-height: 24px;
+margin-bottom: 12px;
+}
+.betsLogo{
+margin-bottom: 17px;
+}
+.drfBets li{
+float: left;
+width: 50%;
+border:1px solid #eeeeee;
+border-left: 0;
+}
+.drfBets li:nth-child(even){
+border-right: 0;
+}
+.drfBets li a{
+font-size: 15px;
+color:#005bf0;
+text-decoration: underline;
+line-height:33px;
+}
+.drfBets li a:hover{
+color: #000000;
+}
+.drfBets li:hover{
+background-color: #f2f2f2;
+}
+.drfBets li a.active{
+color: #000000;
+}
+.drfBets li.active{
+background-color: #f2f2f2;
+}
+

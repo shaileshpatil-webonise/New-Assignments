@@ -52,13 +52,135 @@
                </a>
             </div>
             <!--header-->
+            <div class="navBar">
+               <ul class="clearfix">
+                  <li>
+                     <a href="#">BRF BETS<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu">
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Learn More</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">HANDICAPPING AND PPS<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu ppsMenu">
+                        <li><a href="#">DRF Plus Plans</a></li>
+                        <li><a href="#">DRF Plus Access</a></li>
+                        <li><a href="#">Text Charts</a></li>
+                        <li><a href="#">Game Plan</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">ENTRIES<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu">
+                        <li><a href="#">Entries</a></li>
+                        <li><a href="#">Live Odds</a></li>
+                        <li><a href="#">Workouts</a></li>
+                        <li><a href="#">Changes</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">RESULTS<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu">
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">PDF Charts</a></li>
+                        <li><a href="#">Workout Search</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">NEWS<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu">
+                        <li><a href="#">All Handicapping</a></li>
+                        <li><a href="#">DRF Live</a></li>
+                        <li><a href="#">Harness Racing</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">VIDEO<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu">
+                        <li><a href="#">Lastest Matches</a></li>
+                        <li><a href="#">Old Matches</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">STORE<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu menuWidth">
+                        <li><a href="#">Compare All DRF PPs</a></li>
+                        <li><a href="#">DRF Classic PPs</a></li>
+                        <li><a href="#">DRF Plus Features</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">EVENTS<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu menuWidth">
+                        <li><a href="#">Race Of the Day</a></li>
+                        <li><a href="#">2016 Breeder's Cup</a></li>
+                        <li><a href="#">Hong Kong</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">BREEDING<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu menuWidth">
+                        <li><a href="#">Breeding Home</a></li>
+                        <li><a href="#">Breeding News</a></li>
+                        <li><a href="#">Sales News</a></li>
+                        <li><a href="#">Breeding  Newsletter</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">DRF LIVE TV</a></li>
+                  <li>
+                     <a href="#">MORE<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i></a>
+                     <ul class="subMenu menuWidth">
+                        <li><a href="#">Learn To Play</a></li>
+                        <li><a href="#">History Of Hourseracing</a></li>
+                        <li><a href="#">Sales News</a></li>
+                        <li><a href="#">How to use Easy Form</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="search" id="flip">
+                  <i class="searchIcon"></i>
+               </div>
+               <form id="panel">
+                  <input type="text" placeholder="Search Races,News etc" required>
+                  <input type="submit" value="Submit">
+               </form>
+               <div class="clearfix"></div>
+            </div>
+            <!--navBar-->
          </div>
          <!--headerWrapper-->
+         <div class="contentWrapper clearfix">
+            <div class="bannerWrap">
+                <div class="drfBets">
+                   <a href="#" class="betsLogo"><img src="images/drfbeats.png"></a>
+                   <a href="#" class="login">Login to DRF Bets</a>
+                   <div class="createAcc">
+                      Don't have an account?
+                      <a href="#">Click here to Create One</a>
+                   </div><!--createAcc-->
+                   <ul>
+                     <li><a href="#">Formulator</a></li>
+                     <li><a href="#">TicketMaker</a></li>
+                     <li><a href="#">Entries</a></li>
+                     <li class="active"><a href="#" class="active">Results</a></li>
+                     <li><a href="#">News</a></li>
+                     <li><a href="#">TicketMaker</a></li>
+                   </ul>
+                </div><!--drfBeats-->
+            </div><!--bannerWrap-->
+         </div><!--contentWrapper-->
       </div>
       <!--container-->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $("#flip").click(function(){
+         $("#panel").slideToggle();
+         });
+      </script>
    </body>
 </html>
