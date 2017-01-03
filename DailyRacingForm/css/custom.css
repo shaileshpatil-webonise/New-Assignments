@@ -187,6 +187,9 @@ height: 55px;
 background-color: #404041;
 cursor: pointer;
 }
+.more{
+width: 129px;
+}
 .searchIcon{
 display: inline-block;
 vertical-align: middle;
@@ -225,11 +228,13 @@ padding-top: 9px;
 .bannerWrap{
 float: left;
 width:850px;
+margin: 0 0 20px;
 }
 .drfBets{
 width:209px;
 margin: 0 10px;
 text-align: center;
+float:left;
 }
 .drfBets a{
 display: inline-block;
@@ -246,6 +251,11 @@ margin-bottom: 14px;
 }
 .login:hover{
 color: #ffffff;
+background-color: #dd1e25;
+}
+.login:focus{
+color: #ffffff;
+background-color: #dd1e25;
 }
 .createAcc a{
 color:#005bf0;
@@ -253,7 +263,8 @@ color:#005bf0;
 .createAcc{
 font-size: 14px;
 line-height: 24px;
-margin-bottom: 12px;
+padding-bottom: 12px;
+border-bottom: 2px solid #eeeeee;
 }
 .betsLogo{
 margin-bottom: 17px;
@@ -263,26 +274,166 @@ float: left;
 width: 50%;
 border:1px solid #eeeeee;
 border-left: 0;
+border-top: 0;
 }
 .drfBets li:nth-child(even){
 border-right: 0;
+}
+.drfBets li:nth-child(5){
+border-bottom: 0;
+}
+.drfBets li:nth-child(6){
+border-bottom: 0;
 }
 .drfBets li a{
 font-size: 15px;
 color:#005bf0;
 text-decoration: underline;
 line-height:33px;
+display: block;
 }
 .drfBets li a:hover{
 color: #000000;
-}
-.drfBets li:hover{
 background-color: #f2f2f2;
 }
-.drfBets li a.active{
+.drfBets li a:focus{
 color: #000000;
-}
-.drfBets li.active{
 background-color: #f2f2f2;
 }
-
+.leftSide{
+left: 11px;
+}
+.rightSide{
+right:11px;
+}
+.banner{
+float: left;
+}
+.carousel-control{
+width: auto;
+font-size:36px;
+}
+.carousel-indicators{
+bottom:5px;
+margin-bottom: 0;
+}
+.top{
+top: 106px;
+}
+.carousel-caption{
+left: 5%;
+right: 5%;
+padding: 0 ;
+margin-bottom: 12px;
+text-shadow:none;
+}
+.carousel-caption h3{
+font: 48px/50px 'Titillium Web', sans-serif;
+font-weight: 700;
+color: #ffffff;
+}
+.carousel-caption > span{
+font:22px/24px 'Titillium Web', sans-serif;
+font-weight: 300;
+color: #ffffff;
+}
+.join{
+margin-top: 22px;
+}
+.join span{
+float: left;
+font:18px/20px 'Titillium Web', sans-serif;
+font-weight: 300;
+margin-top: 11px;
+}
+.join a{
+float:right;
+font:18px/20px 'Titillium Web', sans-serif;
+font-weight: 600;
+color: #ffffff;
+background-color: #005bf0;
+border-radius: 3px;
+text-decoration: none;
+padding: 10.5px 25.5px;
+}
+.join a:hover{
+background-color: #dd1e25;
+}
+.join a:focus{
+background-color: #dd1e25;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+width:100%;  
+height: auto;
+}
+.rightCol{
+float: right;
+width:318px;
+}
+.advertiseSection{
+margin:0 9px 11px;
+}
+.advertiseSection a{
+display: block;
+}
+.headlines{
+background-color:#f4f6fa; 
+border-top: 1px solid #eeeeee;
+padding: 0 18px 0 20px;
+}
+.headlines h4{
+font:24px/26px 'Titillium Web', sans-serif;
+font-weight: 600;
+color: #000000;
+padding: 23px 0;
+border-bottom: 1px solid #e3e4e5;
+}
+.subHeadlines a{
+text-decoration: underline;
+font-size: 14px;
+line-height: 18px;
+color: #005bf0;
+display:inline-block;
+margin-bottom: 5px;
+}
+.subHeadlines a:hover{
+color: #dd1e25;
+}
+.subHeadlines li{
+padding: 14px 0;
+border-bottom: 1px solid #e3e4e5;
+}
+.subHeadlines h5{
+font-size: 16px;
+line-height: 22px;
+color: #333333;
+margin-bottom: 7px;
+}
+.drfPlus{
+display:inline-block;
+vertical-align: middle;
+width: 39px;
+height: 15px;
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+background-position:-19px 0;
+margin-left: 8px;
+}
+.subHeadlines span{
+font-size: 14px;
+line-height: 18px;
+color: #888888;
+display:inline-block;
+}
+.subHeadlines li:last-child a{
+font-size: 16px;
+line-height: 18px;
+display: inline-block;
+color: #005bf0;
+margin-bottom: 0;
+}
+.subHeadlines li:last-child{
+padding: 22px 0;
+border-bottom: 0;
+}
