@@ -372,20 +372,27 @@ float: right;
 width:318px;
 }
 .advertiseSection{
-margin:0 9px 11px;
+margin:0 9px 10px;
 }
 .advertiseSection a{
 display: block;
 }
-.headlines{
-background-color:#f4f6fa; 
+.newsInfo{
 border-top: 1px solid #eeeeee;
+background-color:#f4f6fa; 
+}
+.headlines{
+border-bottom: 1px solid #dedfe2;
+}
+.outerBox{
 padding: 0 18px 0 20px;
 }
-.headlines h4{
+h2{
 font:24px/26px 'Titillium Web', sans-serif;
 font-weight: 600;
 color: #000000;
+}
+.headlines h2{
 padding: 23px 0;
 border-bottom: 1px solid #e3e4e5;
 }
@@ -433,7 +440,99 @@ display: inline-block;
 color: #005bf0;
 margin-bottom: 0;
 }
+.subHeadlines li:last-child a:hover{
+color: #dd1e25;
+}
 .subHeadlines li:last-child{
 padding: 22px 0;
 border-bottom: 0;
+}
+.newsHeading{
+padding: 24px 0 10px;
+border-bottom: 1px solid #dddddd;
+}
+.newsHeading h2{
+padding: 0;
+border-bottom: 0;
+margin-bottom: 21px;
+}
+.newsHeading h4{
+font:18px/20px 'Titillium Web', sans-serif;
+font-weight: 600;
+color: #333333;
+}
+.selectionSection{
+padding:24px 0 19px;
+border-bottom: 1px solid #e6e6e6;
+}
+.selectionSection h2{
+margin-bottom:23px;
+}
+.tabMenu li{
+float: left;
+width: 28px;
+margin-right: 13px;
+text-align: center;
+}
+.tabMenu li:last-child{
+margin-right: 0;
+}
+.tabMenu span{
+display: inline-block;
+font-size: 12px;
+line-height: 14px;
+color: #666666;
+margin-bottom: 10px;
+}
+.stakes{
+border-bottom: 1px solid #d0d0d0;
+}
+.tabMenu a{
+height: 28px;
+width: 28px;
+border-radius: 50%;
+border:1px solid #cacaca;
+display:table-cell;
+vertical-align: middle;
+text-decoration: none;
+font-weight: bold;
+color: #000000;
+}
+.tabMenu a:hover{
+background-color:#f0f0f0;
+border: 1px solid #ec1c24;
+}
+.tabs li{
+padding: 16px 0;
+border-bottom: 1px solid #ededed;
+}
+.tabs h5{
+float: left;
+font-size: 16px;
+line-height: 18px;
+color: #333333;
+}
+.tabs a{
+float: right;
+font-size: 14px;
+line-height: 16px;
+color: #005bf0;
+text-decoration: underline;
+}
+.tabs a:hover{
+color: #dd1e25;
+}
+.tabs li:last-child a{
+float: left;
+font-size: 16px;
+line-height: 18px;
+}
+.tabs li:last-child{
+padding:23px 0;
+border-bottom: 0;
+}
+.tabMenu li.active a{
+color: #ffffff;
+background-color: #ec1c24;
+border:1px solid #ec1c24;
 }
