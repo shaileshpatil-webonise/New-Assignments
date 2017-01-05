@@ -965,8 +965,9 @@ color: #dd1e25;
 }
 .newsImage{
 float: right;
-width: 138px;
-height: 93px;
+width: 140px;
+height: 95px;
+border: 1px solid #eeeeee;
 }
 .specialInfo{
 padding: 7px 0 13px;
@@ -998,4 +999,19 @@ margin-left: 3px;
 }
 .picWrapper .drfPlus{
 margin: 13px 0 0 3px;
+}
+.newsWrapper li:nth-child(3) .newsText{
+width: auto;
+}
+.newsWrapper li:nth-child(5) .newsText{
+width: auto;
+}
+.newsWrapper li:nth-child(6) .newsText{
+width: auto;
+}
+.newsWrapper li:nth-child(8) .newsText{
+width: auto;
+}
+.newsWrapper li:nth-child(10) .newsText{
+width: auto;
 }
