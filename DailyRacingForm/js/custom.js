@@ -19,6 +19,11 @@ $("#click").click(function(){
 $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 return false;   
 });
+$('#close').click(function() {
+$('#breakingNews').css({
+'display': 'none',       
+});
+});
 $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 });
 (function ($window) {
