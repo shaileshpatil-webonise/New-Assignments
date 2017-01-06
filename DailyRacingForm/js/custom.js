@@ -1,12 +1,12 @@
 $(document).ready(function() {
 $(".tabs").hide();
 $(".tabs:first").show();
-$(".tabMenu li a").click(function () {
+$(".dateList li a").click(function () {
 var tablink = $(this).attr('href');
 $(".tabs").hide();
 $(tablink).show();
-$(this).parents(".tabMenu").find('li').removeClass("active");
-$(this).parents(".tabMenu li").addClass("active");
+$(this).parents(".dateList").find('li').removeClass("active");
+$(this).parents(".dateList li").addClass("active");
 return false;
 });
 $("#flip").click(function(){
@@ -64,3 +64,4 @@ $(this).parents(".trendingMenu li").addClass("active");
 return false;
 });
 });
+

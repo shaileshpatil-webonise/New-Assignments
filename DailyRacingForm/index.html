@@ -232,11 +232,11 @@
                      </div>
                      <!-- Left and right controls -->
                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                     <span class="glyphicon glyphicon-menu-left leftSide top" aria-hidden="true"></span>
+                     <span class="previousSlide leftSide top" aria-hidden="true"></span>
                      <span class="sr-only">Previous</span>
                      </a>
                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                     <span class="glyphicon glyphicon-menu-right rightSide top" aria-hidden="true"></span>
+                     <span class="nextSlide rightSide top" aria-hidden="true"></span>
                      <span class="sr-only">Next</span>
                      </a>
                   </div>
@@ -430,7 +430,7 @@
                <div class="stakes outerBox">
                   <div class="selectionSection">
                      <h2>Upcoming Stakes</h2>
-                     <ul class="tabMenu clearfix">
+                     <ul class="tabMenu clearfix dateList">
                         <li class="active">
                            <span>TUE</span>
                            <a href="#tuesday">8</a>
@@ -475,7 +475,7 @@
                      <li class="clearfix">
                         <h5>Snack (IND) 4:53</h5>
                         <a href="#" title="View 
-                        PPs">View PPs</a>
+                           PPs">View PPs</a>
                      </li>
                      <li class="clearfix">
                         <h5>Ellen's Lucky (IND) 5:49</h5>
@@ -932,6 +932,144 @@
                   <div class="filterSection clearfix">
                      <h2>DRF LIVE NEWS</h2>
                      <a href="#" class="updates" title="Updates">6 Updates</a>
+                     <div class="weekSlider">
+                        <span class="selectedDate">Jul 7, 2015</span>           
+                        <span id=prev class="previousBtn"></span>
+                        <div class="cycle-slideshow" 
+                           data-cycle-fx="scrollHorz" 
+                           data-cycle-timeout=0
+                           data-cycle-next="#next"
+                           data-cycle-prev="#prev"
+                           data-cycle-slides="> ul"
+                           >
+                           <ul class="tabMenu clearfix">
+                              <li class="active">
+                                 <span>MON</span>
+                                 <a>1</a>
+                              </li>
+                              <li>
+                                 <span>TUE</span>
+                                 <a>2</a>
+                              </li>
+                              <li>
+                                 <span>WED</span>
+                                 <a>3</a>
+                              </li>
+                              <li>
+                                 <span>THU</span>
+                                 <a>4</a>
+                              </li>
+                              <li>
+                                 <span>FRI</span>
+                                 <a>5</a>
+                              </li>
+                              <li>
+                                 <span>SAT</span>
+                                 <a>6</a>
+                              </li>
+                              <li>
+                                 <span>SUN</span>
+                                 <a>7</a>
+                              </li>
+                           </ul>
+                           <!--tabMenu-->
+                           <ul class="tabMenu clearfix">
+                              <li>
+                                 <span>MON</span>
+                                 <a>8</a>
+                              </li>
+                              <li>
+                                 <span>TUE</span>
+                                 <a>9</a>
+                              </li>
+                              <li>
+                                 <span>WED</span>
+                                 <a>10</a>
+                              </li>
+                              <li>
+                                 <span>THU</span>
+                                 <a>11</a>
+                              </li>
+                              <li>
+                                 <span>FRI</span>
+                                 <a>12</a>
+                              </li>
+                              <li>
+                                 <span>SAT</span>
+                                 <a>13</a>
+                              </li>
+                              <li>
+                                 <span>SUN</span>
+                                 <a>14</a>
+                              </li>
+                           </ul>
+                           <!--tabMenu-->
+                           <ul class="tabMenu clearfix ">
+                              <li>
+                                 <span>MON</span>
+                                 <a>15</a>
+                              </li>
+                              <li>
+                                 <span>TUE</span>
+                                 <a>16</a>
+                              </li>
+                              <li>
+                                 <span>WED</span>
+                                 <a>17</a>
+                              </li>
+                              <li>
+                                 <span>THU</span>
+                                 <a>18</a>
+                              </li>
+                              <li>
+                                 <span>FRI</span>
+                                 <a>19</a>
+                              </li>
+                              <li>
+                                 <span>SAT</span>
+                                 <a>20</a>
+                              </li>
+                              <li>
+                                 <span>SUN</span>
+                                 <a>21</a>
+                              </li>
+                           </ul>
+                           <!--tabMenu-->
+                           <ul class="tabMenu clearfix">
+                              <li>
+                                 <span>MON</span>
+                                 <a>22</a>
+                              </li>
+                              <li>
+                                 <span>TUE</span>
+                                 <a>23</a>
+                              </li>
+                              <li>
+                                 <span>WED</span>
+                                 <a>24</a>
+                              </li>
+                              <li>
+                                 <span>THU</span>
+                                 <a>25</a>
+                              </li>
+                              <li>
+                                 <span>FRI</span>
+                                 <a>26</a>
+                              </li>
+                              <li>
+                                 <span>SAT</span>
+                                 <a>27</a>
+                              </li>
+                              <li>
+                                 <span>SUN</span>
+                                 <a>28</a>
+                              </li>
+                           </ul>
+                           <!--tabMenu-->
+                        </div>
+                        <span id=next class="nextBtn"></span>
+                     </div>
+                     <!--weekslider-->
                      <a  class="tracks" title="Tracks" id="track">Tracks<i class="downArrow"></i></a>
                   </div>
                   <!--filterSection-->
@@ -1049,7 +1187,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                        <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1077,7 +1215,6 @@
                                     <a href="#" class="readMore" title="Read More">Read More</a>
                                  </div>
                                  <!--newsText-->
-                               
                               </div>
                               <!--newsDetails-->
                            </div>
@@ -1088,7 +1225,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                      <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1129,7 +1266,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                        <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1156,7 +1293,6 @@
                                     <a href="#" class="readMore" title="Read More">Read More</a>
                                  </div>
                                  <!--newsText-->
-                               
                               </div>
                               <!--newsDetails-->
                            </div>
@@ -1167,7 +1303,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                      <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1195,7 +1331,6 @@
                                     <a href="#" class="   readMore">Read More</a>
                                  </div>
                                  <!--newsText-->
-                               
                               </div>
                               <!--newsDetails-->
                            </div>
@@ -1246,7 +1381,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                       <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1274,7 +1409,6 @@
                                     <a href="#" class="readMore" title="Read More">Read More</a>
                                  </div>
                                  <!--newsText-->
-                               
                               </div>
                               <!--newsDetails-->
                            </div>
@@ -1326,7 +1460,7 @@
                         </div>
                         <!--specialInfo-->
                      </li>
-                      <li>
+                     <li>
                         <div class="contentWrap clearfix">
                            <div class="picWrapper">
                               <div class="authorPic">
@@ -1354,7 +1488,6 @@
                                     <a href="#" class="   readMore">Read More</a>
                                  </div>
                                  <!--newsText-->
-                               
                               </div>
                               <!--newsDetails-->
                            </div>
@@ -1408,9 +1541,9 @@
                   </ul>
                </div>
                <!--newsSection-->
-                <div class="loader">
-                     <img src="images/Preloader.gif">
-                </div>
+               <div class="loader">
+                  <img src="images/Preloader.gif">
+               </div>
             </div>
             <!--info-->
          </div>
@@ -1418,79 +1551,102 @@
       </div>
       <!--container-->
       <div class="footer">
-          <div class="container">
-               <ul class="clearfix">
-                     <li>
-                           <a href="#" title="ENTRIES"><h6>ENTRIES</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="Workouts">Workouts</a></li>
-                              <li><a href="#" title="Charges">Charges</a></li>
-                              <li><a href="#" title="Track Information">Track Information</a></li>
-                           </ul>
-                           <a href="#" title="LIVE ODDS"><h6>LIVE ODDS</h6></a>
-                           <a href="#" title="DRF PLUS" class="lastElement"><h6>DRF PLUS</h6></a>
-                     </li>
-                      <li>
-                           <a href="#" title="RESULTS"><h6>RESULTS</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="Workouts">Workouts</a></li>
-                              <li><a href="#" title="Chart Information">Chart Information</a></li>
-                              <li><a href="#" title="Stakes Replays">Stakes Replays</a></li>
-                           </ul>
-                           <a href="#" title="DRF LIVE NEWS"><h6>DRF LIVE NEWS</h6></a>
-                           <a href="#" title="EVENTS" class="lastElement"><h6>EVENTS</h6></a>
-                     </li>
-                      <li>
-                           <a href="#" title="VIDEO"><h6>VIDEO</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="Race Of the Day">Race Of the Day</a></li>
-                              <li><a href="#" title="Weekend Stakes Analysis">Weekend Stakes Analysis</a></li>
-                              <li><a href="#" title="Friday Happy Hour">Friday Happy Hour</a></li>
-                              <li><a href="#" title="Mid-Atlantic Saturday">Mid-Atlantic Saturday</a></li>
-                              <li><a href="#" title="Preview">Preview</a></li>
-                              <li><a href="#" title="Learn to Play">Learn to Play</a></li>
-                           </ul>
-                     </li>
-                     <li>
-                           <a href="#" title="PPS & DATA"><h6>PPS & DATA</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="DRF Horse PPs">DRF Horse PPs</a></li>
-                              <li><a href="#" title="DRF Race PPs">DRF Race PPs</a></li>
-                              <li><a href="#" title="DRF Reports">DRF Reports</a></li>
-                              <li><a href="#" title="DRF Sheets">DRF Sheets</a></li>
-                              <li><a href="#" title="Schedules">Schedules</a></li>
-                           </ul>
-                     </li>
-                     <li>
-                           <a href="#" title="TOOLS"><h6>TOOLS</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="DRF Formulator">DRF Formulator</a></li>
-                              <li><a href="#" title="DRF Ticketmaker">DRF Ticketmaker</a></li>
-                              <li><a href="#" title="Race Grid">Race Grid</a></li>
-                              <li><a href="#" title="Angle Finder">Angle Finder</a></li>
-                              <li><a href="#" title="Watch List">Watch List</a></li>
-                           </ul>
-                     </li>
-                      <li>
-                           <a href="#" title="ABOUT DRF"><h6>ABOUT DRF</h6></a>
-                           <ul class="footerMenu">
-                              <li><a href="#" title="Advertising">Advertising</a></li>
-                              <li><a href="#" title="Opportunities">Opportunities</a></li>
-                              <li><a href="#" title="Classifieds">Classifieds</a></li>
-                              <li><a href="#" title="Customer Service">Customer Service</a></li>
-                              <li><a href="#" title="Partners">Partners</a></li>
-                              <li><a href="#" title="Website Policies">Website Policies</a></li>
-                           </ul>
-                     </li>
-               </ul>
-               <span>&copy; Daily Racing Form.All rights reserved</span>
-          </div><!--container-->
-      </div><!--footer-->
+         <div class="container">
+            <ul class="clearfix">
+               <li>
+                  <a href="#" title="ENTRIES">
+                     <h6>ENTRIES</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="Workouts">Workouts</a></li>
+                     <li><a href="#" title="Charges">Charges</a></li>
+                     <li><a href="#" title="Track Information">Track Information</a></li>
+                  </ul>
+                  <a href="#" title="LIVE ODDS">
+                     <h6>LIVE ODDS</h6>
+                  </a>
+                  <a href="#" title="DRF PLUS" class="lastElement">
+                     <h6>DRF PLUS</h6>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="RESULTS">
+                     <h6>RESULTS</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="Workouts">Workouts</a></li>
+                     <li><a href="#" title="Chart Information">Chart Information</a></li>
+                     <li><a href="#" title="Stakes Replays">Stakes Replays</a></li>
+                  </ul>
+                  <a href="#" title="DRF LIVE NEWS">
+                     <h6>DRF LIVE NEWS</h6>
+                  </a>
+                  <a href="#" title="EVENTS" class="lastElement">
+                     <h6>EVENTS</h6>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="VIDEO">
+                     <h6>VIDEO</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="Race Of the Day">Race Of the Day</a></li>
+                     <li><a href="#" title="Weekend Stakes Analysis">Weekend Stakes Analysis</a></li>
+                     <li><a href="#" title="Friday Happy Hour">Friday Happy Hour</a></li>
+                     <li><a href="#" title="Mid-Atlantic Saturday">Mid-Atlantic Saturday</a></li>
+                     <li><a href="#" title="Preview">Preview</a></li>
+                     <li><a href="#" title="Learn to Play">Learn to Play</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#" title="PPS & DATA">
+                     <h6>PPS & DATA</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="DRF Horse PPs">DRF Horse PPs</a></li>
+                     <li><a href="#" title="DRF Race PPs">DRF Race PPs</a></li>
+                     <li><a href="#" title="DRF Reports">DRF Reports</a></li>
+                     <li><a href="#" title="DRF Sheets">DRF Sheets</a></li>
+                     <li><a href="#" title="Schedules">Schedules</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#" title="TOOLS">
+                     <h6>TOOLS</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="DRF Formulator">DRF Formulator</a></li>
+                     <li><a href="#" title="DRF Ticketmaker">DRF Ticketmaker</a></li>
+                     <li><a href="#" title="Race Grid">Race Grid</a></li>
+                     <li><a href="#" title="Angle Finder">Angle Finder</a></li>
+                     <li><a href="#" title="Watch List">Watch List</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#" title="ABOUT DRF">
+                     <h6>ABOUT DRF</h6>
+                  </a>
+                  <ul class="footerMenu">
+                     <li><a href="#" title="Advertising">Advertising</a></li>
+                     <li><a href="#" title="Opportunities">Opportunities</a></li>
+                     <li><a href="#" title="Classifieds">Classifieds</a></li>
+                     <li><a href="#" title="Customer Service">Customer Service</a></li>
+                     <li><a href="#" title="Partners">Partners</a></li>
+                     <li><a href="#" title="Website Policies">Website Policies</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <span>&copy; 2015 Daily Racing Form. All rights reserved</span>
+         </div>
+         <!--container-->
+      </div>
+      <!--footer-->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.colorbox.js"></script>
+      <script src="http://malsup.github.com/jquery.cycle2.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
    </body>
 </html>

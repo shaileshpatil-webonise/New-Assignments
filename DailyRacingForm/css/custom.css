@@ -113,16 +113,20 @@ color: #dd1e25;
 }
 .header{
 padding: 25px 0;
-width: 998px;
+max-width: 998px;
 margin: 0 auto;
 }
 .logo{
 float: left;
 margin-top: 6px;
+width: 240px;
+height: 80px;
 }
 .advertise{
 float: left;
 margin-left: 30px;
+width: 728px;
+height: 90px;
 }
 .headerWrapper{
 margin-bottom: 25px;
@@ -237,11 +241,11 @@ margin-bottom: 48px;
 }
 .bannerWrap{
 float: left;
-width:850px;
+max-width:850px;
 margin: 0 0 20px;
 }
 .drfBets{
-width:209px;
+max-width:209px;
 margin: 0 10px;
 text-align: center;
 float:left;
@@ -322,6 +326,7 @@ float: left;
 .carousel-control{
 width: auto;
 font-size:36px;
+opacity: 1;
 }
 .carousel-indicators{
 bottom:5px;
@@ -527,6 +532,7 @@ vertical-align: middle;
 text-decoration: none;
 font-weight: bold;
 color: #000000;
+cursor: pointer;
 }
 .tabMenu a:hover{
 background-color:#f0f0f0;
@@ -719,13 +725,14 @@ margin:0 27px 27px;
 }
 .filterSection h2{
 float: left;
+margin-top: 26px;
 }
 a.updates{
 font-size:14px; 
 line-height:16px;
 color: #005bf0;
 float: left;
-margin-left:13px; 
+margin: 26px 0 0 13px;
 text-decoration:none;
 border: 1px solid #dddddd;
 border-radius: 2px;
@@ -737,7 +744,7 @@ font-size: 16px;
 line-height: 18px;
 color: #005bf0;
 text-decoration: none;
-margin-top: 6px;
+margin-top: 35px;
 cursor: pointer;
 }
 .downArrow{
@@ -1026,7 +1033,7 @@ margin: 0 auto;
 .footer{
 background-color:#f9f9f9;
 border-top:1px solid #eeeeee;
-padding: 49px 0 65px;
+padding: 46px 0 27px;
 }
 .footer > .container > ul > li{
 float: left;
@@ -1036,6 +1043,7 @@ margin-right:10px;
 .footer > .container > ul{
 padding-bottom: 50px;
 border-bottom:1px solid #dddddd;
+margin-bottom:17px;
 }
 .footer > .container > ul > li:nth-child(n+3) .footerMenu{
 margin-bottom: 0;
@@ -1076,5 +1084,88 @@ font-size:14px;
 line-height: 16px;
 color: #888888;
 display:table;
-margin: 19px auto 0;
+margin: 0 auto ;
+}
+.previousSlide{
+display: inline-block;
+vertical-align: middle;
+width:18px ;
+position: relative;
+height:31px;
+background-image: url('../images/sprite.png');
+background-repeat:no-repeat;
+background-position:0 -44px;
+}
+.nextSlide{
+display: inline-block;
+vertical-align: middle;
+width:18px ;
+position: relative;
+height:31px;
+background-image: url('../images/sprite.png');
+background-repeat:no-repeat;
+background-position:-29px -44px;
+}
+.carousel-control.right,.carousel-control.left{
+background-image:none;
+background-repeat:no-repeat;
+}
+.weekSlider{
+float: left;
+margin-left: 20px;
+}
+.cycle-slideshow{
+width: 280px;
+float: left;
+margin: 0 16px;
+}
+.previousBtn{
+height: 14px;
+width: 9px;
+display: inline-block;
+vertical-align:middle;
+background-image: url('../images/sprite.png');
+background-repeat:no-repeat;
+background-position:-1px -24px;
+float: left;
+margin: 36px 0 0 19px;
+cursor: pointer;
+padding: 3px;
+}
+.nextBtn{
+height: 14px;
+width: 9px;
+display: inline-block;
+vertical-align:middle;
+background-image: url('../images/sprite.png');
+background-repeat:no-repeat;
+background-position:-52px -24px;
+margin-top: 36px;
+cursor: pointer;
+padding: 3px;
+}
+.selectedDate{
+font-size: 14px;
+line-height: 18px;
+color:#888888;
+float: left;
+margin-top: 32px;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+.logo{
+width: 230px;
+}
+.advertise{
+width:709px;
+}
+.navBar > ul > li > a{
+padding: 0 6.4px;
+font:13px/55px 'Titillium Web', sans-serif ;
+}
+.search{
+width: 53px;
+}
+.more{
+width: 119px;
+}
 }
