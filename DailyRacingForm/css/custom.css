@@ -119,14 +119,10 @@ margin: 0 auto;
 .logo{
 float: left;
 margin-top: 6px;
-width: 240px;
-height: 80px;
 }
 .advertise{
 float: left;
 margin-left: 30px;
-width: 728px;
-height: 90px;
 }
 .headerWrapper{
 margin-bottom: 25px;
@@ -322,6 +318,7 @@ right:11px;
 }
 .banner{
 float: left;
+max-width: 620px;
 }
 .carousel-control{
 width: auto;
@@ -384,7 +381,7 @@ height: auto;
 }
 .rightCol{
 float: right;
-width:318px;
+max-width:318px;
 }
 .advertiseSection{
 margin:0 9px 10px;
@@ -661,6 +658,7 @@ width: 190px;
 margin-right: 13px;
 border: 1px solid #dddddd;
 cursor:pointer;
+height: 336px;
 }
 .liveInfo ul li:nth-child(2) .matchData span{
 padding: 0 13px;
@@ -673,10 +671,6 @@ padding: 0 14px;
 }
 .liveInfo ul li:last-child{
 margin-right: 0;
-}
-.matchPic{
-width: 188px;
-height: 120px;
 }
 .matchData{
 position: relative;
@@ -761,6 +755,9 @@ margin-left: 5px;
 background-color: #f9f9f9;
 padding:19px 50px 19px 25px;
 border-top: 1px solid #e6e6e6;
+}
+.filterBar form{
+float: right;
 }
 .buttons{
 float: left;
@@ -916,7 +913,7 @@ max-width: 100%;
 .details{
 float: left;
 margin-left:15px;
-width: 726px;
+max-width: 726px;
 }
 .contentWrap{
 margin-bottom: 20px;
@@ -975,9 +972,8 @@ color: #dd1e25;
 }
 .newsImage{
 float: right;
-width: 140px;
-height: 95px;
-border: 1px solid #eeeeee;
+width: 138px;
+height: 93px;
 }
 .specialInfo{
 padding: 7px 0 13px;
@@ -1010,19 +1006,7 @@ margin-left: 3px;
 .picWrapper .drfPlus{
 margin: 13px 0 0 3px;
 }
-.newsWrapper li:nth-child(3) .newsText{
-width: auto;
-}
-.newsWrapper li:nth-child(5) .newsText{
-width: auto;
-}
-.newsWrapper li:nth-child(6) .newsText{
-width: auto;
-}
-.newsWrapper li:nth-child(8) .newsText{
-width: auto;
-}
-.newsWrapper li:nth-child(10) .newsText{
+.newsWrapper li:nth-child(3) .newsText ,.newsWrapper li:nth-child(5) .newsText ,.newsWrapper li:nth-child(6) .newsText ,.newsWrapper li:nth-child(8) .newsText ,.newsWrapper li:nth-child(10) .newsText{
 width: auto;
 }
 .loader{
@@ -1168,4 +1152,146 @@ width: 53px;
 .more{
 width: 119px;
 }
+.bannerWrap{
+width: 708px;
+}
+.drfBets{
+width: 200px;
+margin: 0 5px;
+}
+.banner{
+width: 498px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+height: 254px;
+}
+.carousel-caption h3{
+font:43px/45px 'Titillium Web', sans-serif;
+}
+.carousel-caption > span{
+font: 19px/21px 'Titillium Web', sans-serif;
+}
+.join span{
+font: 16px/18px 'Titillium Web', sans-serif;
+}
+.join a{
+padding: 10.5px 20.5px;
+}
+.rightCol{
+width:260px;
+}
+.subHeadlines h5{
+font: 15px/22px 'Georgia';
+}
+.leftSpace{
+margin-left: 0;
+}
+.tabMenu li{
+width: 25px;
+margin-right: 7px;
+}
+.tabMenu a{
+height: 25px;
+width: 25px;
+}
+.tabMenu span{
+font-size: 11px;
+}
+.tabs h5{
+font:12px/18px 'Georgia';
+}
+.tabs a{
+font-size: 12px;
+}
+.videoInfo h6{
+font:14px/18px 'Georgia';
+}
+.videoInfo span{
+font-size: 12px;
+}
+.videoInfo{
+margin-left: 5px;
+}
+.largeText{
+max-width: 137px;
+}
+.info{
+width: 708px;
+}
+.liveInfo ul li{
+width: 156px;
+margin-right: 10px;
+height: 396px;
+}
+.matchPic{
+width: 156px;
+}
+.matchPic img{
+height: 120px;
+}
+.matchData span{
+font:14px/30px 'Georgia';
+padding:0 12px;
+}
+.matchInfo span{
+font-size: 12px;
+}
+.matchInfo .bottomSpace{
+margin-bottom: 35px;
+}
+.filterSection{
+margin-bottom: 21px;
+}
+a.updates{
+font-size: 14px;
+padding: 6px 8.5px;
+margin-left: 5px;
+}
+.weekSlider{
+margin-left: 10px;
+}
+.previousBtn{
+margin-left: 10px;
+}
+.cycle-slideshow{
+width: 218px;
+margin:0 10px;
+}
+h2{
+font:23px/26px 'Titillium Web', sans-serif;
+}
+a.tracks{
+font-size: 14px;
+}
+.buttons a{
+padding: 8.5px 12px;
+margin-right: 5px;
+}
+.breakingNews{
+padding-left: 66px;
+}
+.fullArticle{
+padding: 0 9px;
+margin-right: 10px;
+}
+.details{
+max-width: 584px;
+}
+.newsText{
+width: 444px;
+}
+.newsText h3{
+font: 24px/26px 'Titillium Web', sans-serif;
+font-weight: 700;
+}
+.newsText p{
+font: 15px/30px 'Georgia';
+}
+.footer > .container > ul > li{
+width: 150px;
+margin-right: 10px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	
 }
