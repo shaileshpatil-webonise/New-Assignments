@@ -19,6 +19,16 @@ $("#click").click(function(){
 $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 return false;   
 });
+$(".liveInfo").hide();
+$(".liveInfo:first").show();
+$(".trendingMenu li a").click(function () {
+var tablink = $(this).attr('href');
+$(".liveInfo").hide();
+$(tablink).show();
+$(this).parents(".trendingMenu").find('li').removeClass("active");
+$(this).parents(".trendingMenu li").addClass("active");
+return false;
+});
 $('#close').click(function() {
 $('#breakingNews').css({
 'display': 'none',       
@@ -52,16 +62,9 @@ $(window).resize(function() {
 colorboxResize(true);
 });
 })(jQuery, this, this.document);
-$(document).ready(function() {
-$(".liveInfo").hide();
-$(".liveInfo:first").show();
-$(".trendingMenu li a").click(function () {
-var tablink = $(this).attr('href');
-$(".liveInfo").hide();
-$(tablink).show();
-$(this).parents(".trendingMenu").find('li').removeClass("active");
-$(this).parents(".trendingMenu li").addClass("active");
-return false;
-});
-});
-
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}

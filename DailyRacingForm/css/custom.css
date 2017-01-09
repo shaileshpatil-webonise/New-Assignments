@@ -21,6 +21,10 @@ font-family: Arial, Helvetica, sans-serif;
 .container{
 padding: 0;
 }
+.leftCol{
+float: left;
+max-width: 850px;
+}
 .topHeader{
 border-bottom: 1px solid #eeeeee;
 }
@@ -237,7 +241,6 @@ margin-bottom: 48px;
 }
 .bannerWrap{
 float: left;
-max-width:850px;
 margin: 0 0 20px;
 }
 .drfBets{
@@ -639,7 +642,6 @@ padding: 0 14px;
 background-color:#ececec;
 }
 .info{
-width: 850px;
 float: left;
 border-right:1px solid #eeeeee;
 }
@@ -1143,6 +1145,9 @@ display:none;
 height: 254px;
 }
 @media (min-width: 992px) and (max-width: 1199px){
+.leftCol{
+width: 708px;
+}
 .logo{
 width: 230px;
 }
@@ -1219,9 +1224,6 @@ margin-left: 5px;
 .largeText{
 max-width: 137px;
 }
-.info{
-width: 708px;
-}
 .liveInfo ul li{
 width: 156px;
 margin-right: 10px;
@@ -1297,6 +1299,9 @@ margin-right: 10px;
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
+.leftCol{
+width: 570px;
+}
 .mobHide{
 display: none;
 }
@@ -1354,7 +1359,6 @@ font-size: 36px;
 border-bottom: 1px solid #ffffff;
 }
 .bannerWrap{
-width: 570px;
 display: block;
 }
 .drfBets{
@@ -1394,9 +1398,6 @@ margin:4px 0 0;
 }
 .tabs h5{
 margin-bottom: 5px;
-}
-.info{
-width: 570px;
 }
 .trendingMenu li a{
 padding: 0 10px;
@@ -1476,7 +1477,6 @@ display: none;
 .navbarMob{
 padding: 12px 15px;
 display: block;
-margin-bottom: 10px;
 }
 .mobLogo{
 float:left;
