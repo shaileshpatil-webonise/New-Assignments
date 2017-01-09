@@ -19,7 +19,7 @@
       <![endif]-->
    </head>
    <body>
-      <div class="topHeader">
+      <div class="topHeader mobHide">
          <ul class="topNav clearfix">
             <li><a href="#" title="DRF.com">DRF.com</a></li>
             <li><a href="#" title="DRF Bets">DRF Bets</a></li>
@@ -44,8 +44,37 @@
          <div class="clearfix"></div>
       </div>
       <!--topHeader-->
+      <div class="navbarMob clearfix" >
+            <a href="#" class="mobLogo" title="DRF"><img src="images/moblogo.png"></a>
+            <a href="#" class="menuBar" onclick="openNav()"><i class="bars"></i></a>
+      </div><!--navbarMob-->
+      <div class="sidenav" id="mySidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <ul class="border">
+               <li><a href="#">DRF BETS</a></li>
+               <li><a href="#">HANDICAPPING & PPS</a></li>
+               <li><a href="#">ENTRIES</a></li>
+               <li><a href="#">RESULTS</a></li>
+               <li><a href="#">NEWS</a></li>
+               <li><a href="#">VIDEO</a></li>
+               <li><a href="#">STORE</a></li>
+               <li><a href="#">EVENTS</a></li>
+               <li><a href="#">BREEDING</a></li>
+               <li><a href="#">LIVE DRF TV</a></li>
+               <li><a href="#">MORE</a></li>
+            </ul>
+              <ul>
+               <li><a href="#">DRF.com</a></li>
+               <li><a href="#">DRF Bets</a></li>
+               <li><a href="#">Breeding</a></li>
+               <li><a href="#">Harness</a></li>
+               <li><a href="#">BCQuality</a></li>
+               <li><a href="#">NHCQuality</a></li>
+               <li><a href="#">Fantasy Sports</a></li> 
+            </ul>
+      </div><!--sideNav-->
       <div class="container">
-         <div class="headerWrapper">
+         <div class="headerWrapper mobHide">
             <div class="header clearfix">
                <a href="#" class="logo" title="DRF"><img src="images/logo.png"
                   class="img-responsive"></a>
@@ -151,7 +180,7 @@
          </div>
          <!--headerWrapper-->
          <div class="contentWrapper clearfix">
-            <div class="bannerWrap">
+            <div class="bannerWrap mobHide">
                <div class="drfBets">
                   <a href="#" class="betsLogo" title="DRF Bets"><img src="images/drfbets.png" alt="DRF BETS"></a>
                   <a href="#" class="login" title="Login">Login to DRF Bets</a>
@@ -246,7 +275,7 @@
             </div>
             <!--bannerWrap-->
             <div class="rightCol">
-               <div class="advertiseSection">
+               <div class="advertiseSection mobHide">
                   <a href="#" title="Bonus"><img src="images/bonusad.png" alt="Bonus" class="img-responsive"></a>
                </div>
                <!--advertiseSection-->
@@ -1103,7 +1132,7 @@
                         <p>Jockey Pedro Terrero sustained what was termed a minor conclusion...</p>
                      </div>
                      <!--newsTitle-->
-                     <a class="closeBtn" id="close" title="Close">Close</a>
+                     <a class="closeBtn" id="close" title="Close">&times;</a>
                      <a href="#" class="fullArticle" title="Read Full Article">Read Full Article</a>
                   </div>
                   <!--breakingNews-->
@@ -1650,5 +1679,14 @@
       <script src="js/jquery.colorbox.js"></script>
       <script src="http://malsup.github.com/jquery.cycle2.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
+      <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
    </body>
 </html>

@@ -643,9 +643,6 @@ width: 850px;
 float: left;
 border-right:1px solid #eeeeee;
 }
-.drfInfo{
-margin-bottom: 38px;
-}
 .drfTrending{
 margin-bottom: 29px;
 }
@@ -659,6 +656,7 @@ margin-right: 13px;
 border: 1px solid #dddddd;
 cursor:pointer;
 height: 336px;
+margin-bottom: 38px;
 }
 .liveInfo ul li:nth-child(2) .matchData span{
 padding: 0 13px;
@@ -1135,6 +1133,15 @@ color:#888888;
 float: left;
 margin-top: 32px;
 }
+.navbarMob{
+display: none;
+}
+.sidenav {
+display:none;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+height: 254px;
+}
 @media (min-width: 992px) and (max-width: 1199px){
 .logo{
 width: 230px;
@@ -1161,9 +1168,6 @@ margin: 0 5px;
 }
 .banner{
 width: 498px;
-}
-.carousel-inner > .item > img, .carousel-inner > .item > a > img{
-height: 254px;
 }
 .carousel-caption h3{
 font:43px/45px 'Titillium Web', sans-serif;
@@ -1293,5 +1297,232 @@ margin-right: 10px;
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
-	
+.mobHide{
+display: none;
+}
+.navbarMob{
+padding: 12px 15px;
+border-bottom: 1px solid #eeeeee;
+display: block;
+margin-bottom: 10px;
+}
+.mobLogo{
+float:left;
+}
+.menuBar{
+float: right;
+}
+.bars{
+display:block;
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+height:13px;
+width: 22px;
+background-position:-72px -24px;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+display: block;
+}
+.sidenav a {
+padding:10px 15px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+color: #f1f1f1;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+.border{
+border-bottom: 1px solid #ffffff;
+}
+.bannerWrap{
+width: 570px;
+display: block;
+}
+.drfBets{
+width: 180px;
+margin: 0 5px;
+}
+.advertiseSection{
+display: block;
+}
+.banner{
+width: 380px;
+}
+.carousel-caption h3{
+font:38px/50px 'Titillium Web', sans-serif;
+}
+.carousel-caption > span{
+font: 18px/24px 'Titillium Web', sans-serif;
+}
+.join span{
+font: 12px/20px 'Titillium Web', sans-serif;
+}
+.join a{
+padding: 10.5px 13.5px;
+}
+.rightCol{
+width: 178px;
+}
+.videos ul li{
+text-align: center;
+}
+.videos ul li a{
+float: none;
+}
+.videoInfo{
+float:none;
+margin:4px 0 0;
+}
+.tabs h5{
+margin-bottom: 5px;
+}
+.info{
+width: 570px;
+}
+.trendingMenu li a{
+padding: 0 10px;
+font: 13px/49px 'Titillium Web', sans-serif;
+font-weight: 600;
+}
+a.updates{
+margin-bottom: 20px;
+}
+.filterSection h2{
+margin-bottom: 20px;
+}
+.weekSlider{
+margin-left: 0;
+}
+.buttons{
+margin-bottom: 15px;
+}
+.login{
+font:16px/19px 'Titillium Web', sans-serif; 
+}
+.advertiseSection img{
+height: 500px;
+}
+.breakingNews{
+padding:14px 30px 11px 50px;
+}
+.closeBtn{
+margin-top: 0;
+font-size: 19px;
+line-height: 19px;
+}
+.fullArticle{
+margin-right: 0;
+}
+.details{
+width: 440px;
+}
+.newsText{
+width: 302px;
+}
+.newsText h3{
+font:23px/28px 'Titillium Web', sans-serif;
+font-weight: 700;
+}
+.newsText p{
+font: 15px/30px 'Georgia';
+}
+.authorTitle{
+font-size: 13px;
+}
+.footer > .container > ul > li{
+width: 115px;
+margin-right: 10px;
+}
+.footerMenu li a{
+line-height: 19px;
+}
+.liveInfo ul li{
+width: 250px;
+margin-right: 18px;
+}
+.liveInfo ul li:nth-child(even){
+margin-right: 0;
+}
+.matchPic img{
+width: 100%;
+}
+.liveInfo ul li{
+height: 354px;
+}
+}
+@media (max-width: 767px){
+.mobHide{
+display: none;
+}
+.navbarMob{
+padding: 12px 15px;
+display: block;
+margin-bottom: 10px;
+}
+.mobLogo{
+float:left;
+}
+.menuBar{
+float: right;
+}
+.bars{
+display:block;
+background-image: url('../images/sprite.png');
+background-repeat: no-repeat;
+height:13px;
+width: 22px;
+background-position:-72px -24px;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+display: block;
+}
+.sidenav a {
+padding:10px 15px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+color: #f1f1f1;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+.border{
+border-bottom: 1px solid #ffffff;
+}
 }
