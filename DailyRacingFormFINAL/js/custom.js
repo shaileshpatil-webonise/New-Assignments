@@ -34,6 +34,16 @@ $('#breakingNews').css({
 'display': 'none',       
 });
 });
+$(".newsTabs").hide();
+$(".newsTabs:first").show();
+$(".newsMob li a").click(function () {
+var tablink = $(this).attr('href');
+$(".newsTabs").hide();
+$(tablink).show();
+$(this).parents(".newsMob").find('li').removeClass("active");
+$(this).parents(".newsMob li").addClass("active");
+return false;
+});
 $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 });
 (function ($window) {

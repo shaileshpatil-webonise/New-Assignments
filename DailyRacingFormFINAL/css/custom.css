@@ -1145,6 +1145,12 @@ display:none;
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 height: 254px;
 }
+.mobileNews{
+display: none;
+}
+.mobilenewsSection{
+display: none;
+}
 @media (min-width: 992px) and (max-width: 1199px){
 .leftCol{
 width: 708px;
@@ -1582,6 +1588,7 @@ display: none;
 .footerMob{
 display: block;
 text-align: center;
+padding:0 0 40px;
 }
 .footerMob span{
 display: inline-block;
@@ -1594,5 +1601,86 @@ margin-bottom: 18px;
 float: none;
 width: 60px;
 margin: 0 auto;
+}
+.drfInfo{
+margin-bottom: 18px;
+}
+.mobileNews{
+display: block;
+}
+.newsMob{
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.newsMob li{
+float: left;
+}
+.newsMob li a{
+font:16px/53px 'Titillium Web', sans-serif;
+font-weight: 600;
+color: #000000;
+text-decoration: none;
+display: block;
+width: 150px;
+text-align: center;
+border-right: 1px solid #dddddd;
+background-color: #f3f3f3;
+}
+.newsMob li a:hover{
+background-color: #ffffff;
+}
+.newsMob li.active a{
+background-color: #ffffff;
+}
+.subHeadlines .date {
+float: right;
+}
+.subHeadlines a{
+margin-bottom: 7px;
+}
+.track .date{
+float:none;
+margin-bottom: 7px;
+}
+.track a{
+margin-bottom: 0;
+}
+.subHeadlines h5{
+margin-bottom: 0;
+}
+.subHeadlines li{
+padding: 10px 0;
+}
+.contentWrapper{
+border: 0;
+}
+.mobileNews{
+border-bottom: 1px solid #c9c9c9;
+margin-bottom: 20px;
+}
+.mobilenewsSection{
+display: block;
+}
+.tabList{
+border: 1px solid #005bf0;
+border-radius: 2px;
+width: 357px;
+margin: 0 auto;
+}
+.tabList li{
+float: left;
+}
+.tabList li a{
+font:14px/38px 'Titillium Web', sans-serif;
+font-weight: 600;
+color: #005bf0;
+background-color:#ffffff;
+text-decoration: none;
+display: block;
+padding: 0 13.3px;
+}
+.tabList li.active a{
+background-color: #005bf0;
+color: #ffffff;
 }
 }
