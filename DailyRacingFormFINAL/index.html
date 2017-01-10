@@ -1140,7 +1140,7 @@
                   <!--newsSection-->
                   <div class="loader">
                      <img src="images/Preloader.gif">
-                  </div>
+                  </div><!--loader-->
                </div>
                <!--info-->
             </div>
@@ -1758,19 +1758,386 @@
                </div>
             </div>
             <!--mobileNews-->
-            <div class="mobilenewsSection outerBox">
+            <div class="mobilenewsSection">
                <ul class="tabList clearfix">
-                  <li class="active"><a href="#">DRF LIVE NEWS</a></li>
-                  <li><a href="#">UPCOMING STAKES</a></li>
-                  <li><a href="#">VIDEOS</a></li>
+                  <li class="active"><a href="#" title="DRF LIVE NEWS">DRF LIVE NEWS</a></li>
+                  <li><a href="#" title="UPCOMING STAKES">UPCOMING STAKES</a></li>
+                  <li><a href="#" title="VIDEOS">VIDEOS</a></li>
                </ul>
                <div class="filterOptions">
                   <span>SORT NEWS BY RACE DATE</span>
-                  <div class="newsDate">
+                  <div class="newsDate clearfix">
                      <a href="#">All News</a>
                      <span>Select Date</span>
                   </div>
                   <!--newsDate-->
+                  <div class="weekSlider clearfix">
+                     <span id=prev class="previousBtn"></span>
+                     <div class="cycle-slideshow" 
+                        data-cycle-fx="scrollHorz" 
+                        data-cycle-timeout=0
+                        data-cycle-next="#next"
+                        data-cycle-prev="#prev"
+                        data-cycle-slides="> ul"
+                        >
+                        <ul class="tabMenu clearfix">
+                           <li class="active">
+                              <span>MON</span>
+                              <a>1</a>
+                           </li>
+                           <li>
+                              <span>TUE</span>
+                              <a>2</a>
+                           </li>
+                           <li>
+                              <span>WED</span>
+                              <a>3</a>
+                           </li>
+                           <li>
+                              <span>THU</span>
+                              <a>4</a>
+                           </li>
+                           <li>
+                              <span>FRI</span>
+                              <a>5</a>
+                           </li>
+                           <li>
+                              <span>SAT</span>
+                              <a>6</a>
+                           </li>
+                           <li>
+                              <span>SUN</span>
+                              <a>7</a>
+                           </li>
+                        </ul>
+                        <!--tabMenu-->
+                        <ul class="tabMenu clearfix">
+                           <li>
+                              <span>MON</span>
+                              <a>8</a>
+                           </li>
+                           <li>
+                              <span>TUE</span>
+                              <a>9</a>
+                           </li>
+                           <li>
+                              <span>WED</span>
+                              <a>10</a>
+                           </li>
+                           <li>
+                              <span>THU</span>
+                              <a>11</a>
+                           </li>
+                           <li>
+                              <span>FRI</span>
+                              <a>12</a>
+                           </li>
+                           <li>
+                              <span>SAT</span>
+                              <a>13</a>
+                           </li>
+                           <li>
+                              <span>SUN</span>
+                              <a>14</a>
+                           </li>
+                        </ul>
+                        <!--tabMenu-->
+                        <ul class="tabMenu clearfix ">
+                           <li>
+                              <span>MON</span>
+                              <a>15</a>
+                           </li>
+                           <li>
+                              <span>TUE</span>
+                              <a>16</a>
+                           </li>
+                           <li>
+                              <span>WED</span>
+                              <a>17</a>
+                           </li>
+                           <li>
+                              <span>THU</span>
+                              <a>18</a>
+                           </li>
+                           <li>
+                              <span>FRI</span>
+                              <a>19</a>
+                           </li>
+                           <li>
+                              <span>SAT</span>
+                              <a>20</a>
+                           </li>
+                           <li>
+                              <span>SUN</span>
+                              <a>21</a>
+                           </li>
+                        </ul>
+                        <!--tabMenu-->
+                        <ul class="tabMenu clearfix">
+                           <li>
+                              <span>MON</span>
+                              <a>22</a>
+                           </li>
+                           <li>
+                              <span>TUE</span>
+                              <a>23</a>
+                           </li>
+                           <li>
+                              <span>WED</span>
+                              <a>24</a>
+                           </li>
+                           <li>
+                              <span>THU</span>
+                              <a>25</a>
+                           </li>
+                           <li>
+                              <span>FRI</span>
+                              <a>26</a>
+                           </li>
+                           <li>
+                              <span>SAT</span>
+                              <a>27</a>
+                           </li>
+                           <li>
+                              <span>SUN</span>
+                              <a>28</a>
+                           </li>
+                        </ul>
+                        <!--tabMenu-->
+                     </div>
+                     <span id=next class="nextBtn"></span>
+                  </div>
+                  <!--weekslider-->
+                  <div class="filterBar clearfix">
+                     <form class="clearfix">
+                        <a href="#" class="clearBtn" title="Clear">Clear</a>
+                        <div class="dropdown filterDropdown">
+                           <button class="btn btn-default dropdown-toggle filterBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                           Filter By Tracks
+                           <i class="dropArrow"></i>
+                           </button>
+                           <ul class="dropdown-menu filterMenu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">Aqueduct</a></li>
+                              <li><a href="#">Keenland</a></li>
+                              <li><a href="#">Gulfstream</a></li>
+                           </ul>
+                        </div>
+                     </form>
+                  </div>
+                  <!--filterBar-->
+                  <div class="breakingNews clearfix" id="breakingNews">
+                     <div class="newsTitle">
+                        <h4>Breaking News:</h4>
+                        <h5>Golden Gate:Terrero injured in nineth race spill</h5>
+                        <p>Jockey Pedro Terrero sustained what was termed a minor conclusion...</p>
+                        <a href="#" class="fullArticle" title="Read Full Article">Read Full Article</a>
+                     </div>
+                     <!--newsTitle-->
+                     <a class="closeBtn" id="close" title="Close">&times;</a>
+                  </div>
+                  <!--breakingNews-->
+                  <ul class="newsWrapper">
+                     <li>
+                        <div class="contentWrap clearfix">
+                           <div class="picWrapper">
+                              <div class="authorPic">
+                                 <img src="images/mike.png" alt="Mike"> 
+                              </div>
+                              <!--authorPic-->
+                           </div>
+                           <!--picWrapper-->
+                           <div class="details">
+                              <div class="nameinfoWrapper clearfix">
+                                 <div class="authorTitle">
+                                    Mike Watchmaker,<a href="#" title="Pimlico">Pimlico,</a> Race 2
+                                 </div>
+                                 <!--authorTitle-->
+                                 <span class="date">Jul 7, 2015 12:30 pm</span>
+                              </div>
+                              <!--nameinfoWrapper-->
+                              <div class="newsDetails clearfix">
+                                 <div class="newsText">
+                                    <a href="#" class="headline">
+                                       <h3>Selected quotes from Baffert from this morning</h3>
+                                    </a>
+                                    <p>Here are some of the things trainer Bob Baffert said this morning regarding American Pharoah and the Preakness: Baffert said American Pharoah was “quiet, a little tired, like he’s supposed..</p>
+                                    <a href="#" class="readMore" title="Read More">Read More</a>
+                                 </div>
+                                 <!--newsText-->
+                                 <div class="newsImage">
+                                    <img src="images/pimlico.png" alt="Pimlico" class="img-responsive">
+                                 </div>
+                              </div>
+                              <!--newsDetails-->
+                           </div>
+                           <!--details-->
+                        </div>
+                        <div class="specialInfo">
+                           <span>Free<i class="drfLarge"></i> preview sponsored by</span><img src="images/laurepark.png" alt="laurepark">
+                        </div>
+                        <!--specialInfo-->
+                     </li>
+                     <li>
+                           <div class="contentWrap clearfix">
+                              <div class="picWrapper">
+                                 <div class="authorPic">
+                                    <img src="images/welsch.png" alt="Welsch"> 
+                                 </div>
+                                 <!--authorPic-->
+                              </div>
+                              <!--picWrapper-->
+                              <div class="details">
+                                 <div class="nameinfoWrapper clearfix">
+                                    <div class="authorTitle">
+                                       Mike Welsch,<a href="#" title="Pimlico">Pimlico,</a> Race 2
+                                    </div>
+                                    <!--authorTitle-->
+                                    <span class="date">Jul 7, 2015 12:30 pm</span>
+                                 </div>
+                                 <!--nameinfoWrapper-->
+                                 <div class="newsDetails clearfix">
+                                    <div class="newsText">
+                                       <a href="#" class="headline">
+                                          <h3>Pimlico: Taylor Hole one win away from No. 2,000</h3>
+                                       </a>
+                                       <p>Hole, a 43-year-old native of Salem, N.H., has scored almost 1,600 of his wins at Suffolk Downs and Rockingham Park. With the closing of Suffolk, he started riding in Maryland last November and his business...  </p>
+                                       <a href="#" class="readMore" title="Read More">Read More</a>
+                                    </div>
+                                    <!--newsText-->
+                                 </div>
+                                 <!--newsDetails-->
+                              </div>
+                              <!--details-->
+                           </div>
+                           <div class="specialInfo">
+                              <span>Free<i class="drfLarge"></i> preview sponsored by</span><img src="images/laurepark.png" alt="laurepark">
+                           </div>
+                           <!--specialInfo-->
+                        </li>
+                        <li>
+                           <div class="contentWrap clearfix">
+                              <div class="picWrapper">
+                                 <div class="authorPic">
+                                    <img src="images/dave.png" alt="Dave"> 
+                                 </div>
+                                 <!--authorPic-->
+                                 <i class="drfPlus"></i>
+                              </div>
+                              <!--picWrapper-->
+                              <div class="details">
+                                 <div class="nameinfoWrapper clearfix">
+                                    <div class="authorTitle">
+                                       Dave Litfin,<a href="#" title="Aqueduct">Aqueduct,</a> Race 3 
+                                    </div>
+                                    <!--authorTitle-->
+                                    <span class="date">Jul 7, 2015 11:45 am</span>
+                                 </div>
+                                 <!--nameinfoWrapper-->
+                                 <div class="newsDetails clearfix">
+                                    <div class="newsText">
+                                       <a href="#" class="headline">
+                                          <h3>Piquant’s last race points him out in Thursday allowance</h3>
+                                       </a>
+                                       <p>OZONE PARK, N.Y. – The four-tiered conditions of Thursday’s $81,000 second race at Aqueduct gave the appearance that it was written for a stakes-winning horse who was...</p>
+                                       <a href="#" class="readMore" title="Read More">Read More</a>
+                                    </div>
+                                    <!--newsText-->
+                                 </div>
+                                 <!--newsDetails-->
+                              </div>
+                              <!--details-->
+                           </div>
+                           <div class="specialInfo">
+                              <span>Free<i class="drfLarge"></i> preview sponsored by</span><img src="images/laurepark.png" alt="laurepark">
+                           </div>
+                           <!--specialInfo-->
+                        </li>
+                        <li>
+                           <div class="contentWrap clearfix">
+                              <div class="picWrapper">
+                                 <div class="authorPic">
+                                    <img src="images/david.png" alt="David"> 
+                                 </div>
+                                 <!--authorPic-->
+                                 <i class="drfPlus"></i>
+                              </div>
+                              <!--picWrapper-->
+                              <div class="details">
+                                 <div class="nameinfoWrapper clearfix">
+                                    <div class="authorTitle">
+                                       David Grening,<a href="#" title="Belmont Park">Belmont Park,</a> Race 3 -  <a href="#">DRF Live</a>
+                                    </div>
+                                    <!--authorTitle-->
+                                    <span class="date">Jul 7, 2015 12:15 pm</span>
+                                 </div>
+                                 <!--nameinfoWrapper-->
+                                 <div class="newsDetails clearfix">
+                                    <div class="newsText">
+                                       <a href="#" class="headline">
+                                          <h3>Selected quotes from Baffert from this morning</h3>
+                                       </a>
+                                       <p>ARCADIA, Calif. – Mike Mitchell, the winningest trainer in Del Mar history who won 20 training titles in Southern California, died on Tuesday of the effects of  a brain tumor diagnosed...</p>
+                                       <a href="#" class="readMore" title="Read More">Read More</a>
+                                    </div>
+                                    <!--newsText-->
+                                    <div class="newsImage">
+                                       <img src="images/belmont.png" alt="Belmont" class="img-responsive">
+                                    </div>
+                                 </div>
+                                 <!--newsDetails-->
+                              </div>
+                              <!--details-->
+                           </div>
+                           <div class="specialInfo">
+                              <span>Free<i class="drfLarge"></i> preview sponsored by</span><img src="images/laurepark.png" alt="laurepark">
+                           </div>
+                           <!--specialInfo-->
+                        </li>
+                        <li>
+                           <div class="contentWrap clearfix">
+                              <div class="picWrapper">
+                                 <div class="authorPic">
+                                    <img src="images/hersh.png" alt="Hersh"> 
+                                 </div>
+                                 <!--authorPic-->
+                                 <i class="drfPlus"></i>
+                              </div>
+                              <!--picWrapper-->
+                              <div class="details">
+                                 <div class="nameinfoWrapper clearfix">
+                                    <div class="authorTitle">
+                                       Marcus Hersh,<a href="#" title="Pimlico">Pimlico,</a> Race 3 
+                                    </div>
+                                    <!--authorTitle-->
+                                    <span class="date">Jul 7, 2015 11:30 am</span>
+                                 </div>
+                                 <!--nameinfoWrapper-->
+                                 <div class="newsDetails clearfix">
+                                    <div class="newsText">
+                                       <a href="#" class="headline">
+                                          <h3>Contention runs deep in Dixie Stakes</h3>
+                                       </a>
+                                       <p>BALTIMORE – Handicappers clamoring for big fields might clam up after digging into the Dixie Stakes. Fourteen are in the main body of the turf lead-in to the Preakness on...  </p>
+                                       <a href="#" class="readMore" title="Read More">Read More</a>
+                                    </div>
+                                    <!--newsText-->
+                                    <div class="newsImage">
+                                       <img src="images/dixie.png" alt="Dixie" class="img-responsive">
+                                    </div>
+                                 </div>
+                                 <!--newsDetails-->
+                              </div>
+                              <!--details-->
+                           </div>
+                           <div class="specialInfo">
+                              <span>Free<i class="drfLarge"></i> preview sponsored by</span><img src="images/laurepark.png" alt="Laurepark">
+                           </div>
+                           <!--specialInfo-->
+                        </li>
+                  </ul>
+                             <div class="loader">
+                     <img src="images/Preloader.gif">
+                  </div><!--loader-->
                </div>
                <!--filterOptions-->
             </div>

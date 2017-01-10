@@ -1582,9 +1582,6 @@ display: none;
 .footer{
 display: none;
 }
-.loader{
-display: none;
-}
 .footerMob{
 display: block;
 text-align: center;
@@ -1653,6 +1650,8 @@ padding: 10px 0;
 }
 .contentWrapper{
 border: 0;
+border-bottom: 1px solid #dddddd;
+margin-bottom: 18px;
 }
 .mobileNews{
 border-bottom: 1px solid #c9c9c9;
@@ -1664,8 +1663,8 @@ display: block;
 .tabList{
 border: 1px solid #005bf0;
 border-radius: 2px;
-width: 357px;
-margin: 0 auto;
+width: 353px;
+margin: 0 auto 19px;
 }
 .tabList li{
 float: left;
@@ -1677,10 +1676,117 @@ color: #005bf0;
 background-color:#ffffff;
 text-decoration: none;
 display: block;
-padding: 0 13.3px;
+padding: 0 15.4px;
 }
 .tabList li.active a{
 background-color: #005bf0;
 color: #ffffff;
+}
+.filterOptions > span{
+font-size: 12px;
+line-height: 14px;
+color: #666666;
+margin-bottom: 18px;
+display: inline-block;
+margin-left: 36px;
+}
+.newsDate{
+margin: 0 36px 18px;
+}
+.newsDate a{
+ font-size: 16px;
+ line-height: 18px;
+ color: #005bf0;
+ text-decoration: none;
+ float: left;
+}
+.newsDate span{
+font-size: 14px;
+line-height: 18px;
+color: #aaaaaa;
+float: right;
+}
+.weekSlider{
+width: 330px;
+margin: 0 auto 24px;
+float: none;
+}
+.previousBtn{
+margin-left: 0;
+}
+a.clearBtn{
+margin-left: 0;
+}
+.filterBar form{
+float: none;
+}
+.filterDropdown{
+float:none;
+}
+.filterBar{
+padding: 10px 50px 10px 25px;
+border-bottom:1px solid #e6e6e6;
+}
+.breakingNews{
+padding: 18px 10px;
+}
+.breakingNews a.fullArticle{
+float: none;
+display: inline-block;
+margin: 0;
+font: 14px/40px 'Titillium Web', sans-serif
+}
+.newsTitle{
+max-width: 329px;
+margin-right: 20px;
+}
+.closeBtn{
+margin-top: 0;
+}
+.newsTitle p{
+margin-bottom: 20px;
+}
+.newsImage{
+display: none;
+}
+.newsWrapper li{
+padding: 21px 0 0 9px;
+}
+.nameinfoWrapper .date{
+float: none;
+display: inline-block;
+}
+.authorTitle{
+float: none;
+}
+.newsText h3{
+font: 20px/24px 'Titillium Web', sans-serif;
+font-weight: 600;
+}
+.newsText p{
+font-size: 15px;
+line-height: 26px;	
+color: #333333;
+margin-bottom: 4px;
+}
+.date{
+font-size: 13px;
+line-height: 18px;
+}
+.nameinfoWrapper{
+margin: 0 0 14px;
+}
+.contentWrap{
+margin: 0 0 20px;
+}
+.newsText{
+width: 381px;
+float: none;
+}
+.newsWrapper li:nth-child(3) .newsText, .newsWrapper li:nth-child(5) .newsText, .newsWrapper li:nth-child(6) .newsText, .newsWrapper li:nth-child(8) .newsText, .newsWrapper li:nth-child(10) .newsText{
+width: 381px;
+}
+.loader{
+padding: 0;
 }
 }
